@@ -400,7 +400,7 @@ main section {
 
 .tag-pink p {
   display: inline-block;
-  border: 1px solid #22201f;
+  border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
   border-radius: 100px;
   background-color: #FFBBD9;
@@ -408,11 +408,12 @@ main section {
   font-size: 16px;
   margin-right: 0.5em;
   line-height: 1.3em;
+  color: rgba(34, 32, 31, 0.75);
 }
 
 .tag-blue p {
   display: inline-block;
-  border: 1px solid #22201f;
+  border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
   border-radius: 100px;
   background-color: #AECAFF;
@@ -420,11 +421,12 @@ main section {
   font-size: 16px;
   margin-right: 0.5em;
   line-height: 1.3em;
+  color: rgba(34, 32, 31, 0.75);
 }
 
 .tag-purple p {
   display: inline-block;
-  border: 1px solid #22201f;
+  border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
   border-radius: 100px;
   background-color: #ECB6EF;
@@ -432,6 +434,7 @@ main section {
   font-size: 16px;
   margin-right: 0.5em;
   line-height: 1.3em;
+  color: rgba(34, 32, 31, 0.75);
 }
 
 .icon-container {
@@ -514,7 +517,7 @@ footer {
     width: 80vw;
     height: 50vh;
     min-width: 80vw;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 0;
     object-fit: cover;
   }
@@ -523,9 +526,13 @@ footer {
     width: 80vw;
     height: 50vh;
     min-width: 80vw;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 0;
     object-fit: cover;
+  }
+
+  .project-description {
+    max-width: 80vw;
   }
 
   .small-tags-width {
