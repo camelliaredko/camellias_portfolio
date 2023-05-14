@@ -176,6 +176,18 @@ main section {
   font-size: 150%;
 }
 
+.skills-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skills-icons {
+  width: 32px;
+  height: auto;
+  margin-right: 0.75em;
+}
+
 .skill-type {
   display: flex;
   flex-direction: row;
@@ -572,6 +584,7 @@ footer {
   }
 
   .skill-type {
+    margin-top: 2em;
     flex-direction: column;
     align-items: center;
   }
