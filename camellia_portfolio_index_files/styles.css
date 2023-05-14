@@ -201,35 +201,38 @@ main section {
 
 .skills-boxes-pink p {
   display: inline-block;
-  border: 1px solid #22201f;
+  border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
   border-radius: 100px;
   background-color: #FFBBD9;
   color: #22201f;
   font-size: 16px;
   margin: 0.5rem;
+  color: rgba(34, 32, 31, 0.75);
 }
 
 .skills-boxes-blue p {
   display: inline-block;
-  border: 1px solid #22201f;
+  border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
   border-radius: 100px;
   background-color: #AECAFF;
   color: #22201f;
   font-size: 16px;
   margin: 0.5rem;
+  color: rgba(34, 32, 31, 0.75);
 }
 
 .skills-boxes-purple p {
   display: inline-block;
-  border: 1px solid #22201f;
+  border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
   border-radius: 100px;
   background-color: #ECB6EF;
   color: #22201f;
   font-size: 16px;
   margin: 0.5rem;
+  color: rgba(34, 32, 31, 0.75);
 }
 
 #contact-section {
