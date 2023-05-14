@@ -31,6 +31,15 @@ font-family: 'Fraunces', serif; */
 .darkgray {
   color: #22201f;
 }
+.blue-tag {
+  color: #AECAFF;
+}
+.pink-tag {
+  color: #FFBBD9;
+}
+.purple-tag {
+  color: #ECB6EF;
+}
 
 html {
   color: #22201f;
@@ -192,7 +201,7 @@ main section {
   border: 1px solid #22201f;
   padding: 0px 10px;
   border-radius: 100px;
-  background-color: #ff90c2;
+  background-color: #FFBBD9;
   color: #22201f;
   font-size: 16px;
   margin: 0.5rem;
@@ -203,7 +212,7 @@ main section {
   border: 1px solid #22201f;
   padding: 0px 10px;
   border-radius: 100px;
-  background-color: #8fb6ff;
+  background-color: #AECAFF;
   color: #22201f;
   font-size: 16px;
   margin: 0.5rem;
@@ -214,7 +223,7 @@ main section {
   border: 1px solid #22201f;
   padding: 0px 10px;
   border-radius: 100px;
-  background-color: #ea9bee;
+  background-color: #ECB6EF;
   color: #22201f;
   font-size: 16px;
   margin: 0.5rem;
@@ -352,7 +361,7 @@ main section {
   width: 40vw;
   height: 50vh;
   min-width: 35em;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 0;
   object-fit: cover;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
@@ -362,7 +371,7 @@ main section {
   width: 40vw;
   height: 50vh;
   min-width: 35em;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 0;
   object-fit: cover;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
@@ -387,7 +396,7 @@ main section {
   border: 1px solid #22201f;
   padding: 0px 10px;
   border-radius: 100px;
-  background-color: #ff90c2;
+  background-color: #FFBBD9;
   color: #22201f;
   font-size: 16px;
   margin-right: 0.5em;
@@ -399,7 +408,7 @@ main section {
   border: 1px solid #22201f;
   padding: 0px 10px;
   border-radius: 100px;
-  background-color: #8fb6ff;
+  background-color: #AECAFF;
   color: #22201f;
   font-size: 16px;
   margin-right: 0.5em;
@@ -411,7 +420,7 @@ main section {
   border: 1px solid #22201f;
   padding: 0px 10px;
   border-radius: 100px;
-  background-color: #ea9bee;
+  background-color: #ECB6EF;
   color: #22201f;
   font-size: 16px;
   margin-right: 0.5em;
