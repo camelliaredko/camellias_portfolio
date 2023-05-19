@@ -758,6 +758,31 @@ button {
     border-top: 2px solid #635aee;
   }
 
+  #navbar.menu-opened #hamburger .line-burger:nth-child(1) {
+    transform: rotate(0deg); /* Reset the initial rotation */
+    transition: transform 0.3s ease-in-out; /* Add a transition for smooth animation */
+  }
+  
+  #navbar.menu-opened #hamburger .line-burger:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Add a transition for smooth animation */
+  }
+  
+  #navbar.menu-opened #hamburger .line-burger:nth-child(3) {
+    transform: rotate(0deg); /* Reset the initial rotation */
+    transition: transform 0.3s ease-in-out; /* Add a transition for smooth animation */
+  }
+  
+  #navbar.menu-opened #hamburger .line-burger:nth-child(1).animate {
+    transform: rotate(45deg) translate(15px, 4px); /* Apply the final rotation and translation */
+  }
+  
+  #navbar.menu-opened #hamburger .line-burger:nth-child(3).animate {
+    transform: rotate(-45deg) translate(15px, 4px); /* Apply the final rotation and translation */
+  }
+  
+  
+
   #intro-text {
     width: 80%;
     margin: 2em;
