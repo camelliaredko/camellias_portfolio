@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   const burger = document.getElementById('hamburger');
-  const nav = document.getElementById('nav');
+  const nav = document.getElementById('navbar');
   nav.classList.remove('menu-opened');
   let menu = 'closed';
 
