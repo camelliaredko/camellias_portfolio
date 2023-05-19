@@ -91,7 +91,7 @@ strong {
 main {
   position: relative;
   width: 100%;
-  margin: 0 auto; /* Center the element horizontally */
+  margin: 0 auto; 
   padding: 0;
   line-height: 1.3em;
   max-width: 90vw;
@@ -115,7 +115,7 @@ intro-section {
 }
 
 .case-study-section {
-  padding: 0 5em; /* Add padding as needed */
+  padding: 0 5em;
 }
 
 .section-line {
@@ -131,7 +131,7 @@ intro-section {
 .section-text,
 .section-quote {
   display: block;
-  margin-bottom: 2.5em; /* Adjust the margin-bottom value as needed */
+  margin-bottom: 2.5em; 
 }
 
 .section-title {
@@ -140,7 +140,7 @@ intro-section {
 
 .section-subtitle {
   font-size: 2.5em;
-  margin-bottom: 1.2em; /* Adjust the margin-bottom value as needed */
+  margin-bottom: 1.2em;
   line-height: 1.3em;
 }
 
@@ -157,7 +157,7 @@ intro-section {
 
 .section-image {
   display: block;
-  margin-bottom: 1em; /* Add spacing between images */
+  margin-bottom: 1em;
   max-width: 95%;
 }
 
@@ -174,8 +174,37 @@ intro-section {
 
 #figma-link .section-subtitle {
   margin-top: 0em;
-  margin-bottom: 0em; /* Adjust the margin-bottom value as needed */
+  margin-bottom: 0em; 
 }
+
+.more-projects-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.more-projects-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+}
+
+.more-projects-section-image {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 3px dashed #8fb6ff;
+}
+
+.more-projects-image-title {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
 
 /* #top-section-line {
   margin-bottom: 2em;
@@ -420,7 +449,7 @@ intro-section {
 }
 
 .intro-image {
-  max-width: 100%; /* Adjust the width as needed */
+  max-width: 100%; 
   border-radius: 10px;
   border: 3px dashed #8fb6ff;
 }
@@ -430,7 +459,7 @@ intro-section {
   /* justify-content: center; */
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 2em; /* Add spacing between the image and information */
+  margin-top: 2em; 
 }
 
 #intro-boxes {
@@ -440,7 +469,7 @@ intro-section {
 }
 
 .intro-box {
-  margin-bottom: 2em; /* Add spacing between the intro boxes */
+  margin-bottom: 2em; 
   font-weight: bold;
   /* right: 1em; */
   display: inline-block;
@@ -763,32 +792,13 @@ footer {
     margin: 1.75em 0em;
   }
 
-  .about-image {
-    width: 80vw;
-    height: 80vw;
-    border-radius: 50%;
-    border: 3px dashed #ea9bee;
-    margin: 5em 2em auto;
-    object-fit: cover;
+  .more-projects-image-container {
+    flex-direction: column; 
+    align-items: center; 
   }
-
-  .about-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .about-text {
-    font-size: 14px;
-    width: 85%;
-    min-width: 20%;
-    margin: 3em auto;
-    margin-bottom: 0em;
-  }
-
-  .about-text h2 {
-    font-size: 150%;
+  
+  .more-projects-image-wrapper {
+    width: 95%; 
   }
 
   .contact-box {
