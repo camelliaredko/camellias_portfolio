@@ -774,7 +774,7 @@ button {
   }
   
   #navbar.menu-opened #hamburger .line-burger:nth-child(1).animate {
-    transform: rotate(45deg) translate(15px, 4px); /* Apply the final rotation and translation */
+    transform: rotate(45deg) translate(15px, 3px); /* Apply the final rotation and translation */
   }
   
   #navbar.menu-opened #hamburger .line-burger:nth-child(3).animate {
