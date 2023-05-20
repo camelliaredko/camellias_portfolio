@@ -131,7 +131,7 @@ intro-section {
 .section-text,
 .section-quote {
   display: block;
-  margin-bottom: 2.5em; 
+  margin-bottom: 2.5em;
 }
 
 .section-title {
@@ -147,6 +147,7 @@ intro-section {
 .section-quote {
   font-size: 150%;
   line-height: 1.3em;
+  text-align: center; 
 }
 
 .section-image-container {
@@ -781,12 +782,32 @@ button {
     transform: rotate(-45deg) translate(15px, 4px); /* Apply the final rotation and translation */
   }
   
-  
+
+  #intro-information {
+    flex-direction: column;
+  }
+
+
+  .intro-box {
+    color: #22201f;
+    position: relative;
+    min-width: 90%;
+    max-width: 90%;
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+
+  #intro-boxes {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0em; 
+  }
 
   #intro-text {
     width: 80%;
     margin: 2em;
   }
+
 
   #me-greeting {
     width: 60%;
@@ -795,7 +816,7 @@ button {
 
   #intro-section {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 0;
     justify-content: center;
@@ -886,6 +907,10 @@ button {
     align-items: center;
     width: 90%;
     margin: 1.75em 0em;
+  }
+
+  .case-study-section {
+    padding: 0 2em;
   }
 
   .more-projects-image-container {
