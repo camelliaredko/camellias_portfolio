@@ -73,6 +73,11 @@ h5 {
     text-decoration-thickness: 15%;
   }
 
+  .non-decorated-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
   #nameplate {
     margin-left: 0.5em;
     color: #8fb6ff;
