@@ -89,6 +89,10 @@ h5 {
     margin: 0em;
   }
 
+.two-columns {
+  display: flex;
+}
+
 main {
   position: relative;
   width: 100%;
@@ -140,6 +144,12 @@ main section {
     font-weight: bolder;
     font-size: 115%;
   }
+
+#intro-text {
+  font-family: "Fraunces", serif;
+  max-width: 42ch;
+  align-self: center;
+}
 
 #projects-section {
   padding-top: 10vh;
@@ -301,20 +311,15 @@ main section {
 }
 
 #intro-section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
   position: relative;
   padding: 12em 0em 9em;
   line-height: 1.8em;
 }
 
-#intro-text {
-  width: 40%;
-  margin: 5em;
+#intro-img {
+  flex-basis: 18rem;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .intro-spacer {
@@ -608,7 +613,6 @@ footer {
   }
 
   #intro-text {
-    width: 80%;
     margin: 2em;
   }
 
@@ -618,20 +622,9 @@ footer {
   }
 
   #intro-section {
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
     position: relative;
     padding: 4em 0em 0em;
     line-height: 1.3em;
-  }
-
-  .section-content {
-    margin: 4em 0em;
-    width: 100%;
   }
 
   .section-title {
