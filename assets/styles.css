@@ -329,6 +329,7 @@ shape-outside: circle();
   flex-wrap: wrap;
   justify-content: center;
   gap: 5rem 2rem;
+  padding: 2em;
 }
 
 .project-description {
