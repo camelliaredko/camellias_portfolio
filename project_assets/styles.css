@@ -525,7 +525,7 @@ main {
   width: 100%;
 }
 
-.skills-boxes-pink p {
+.skills-boxes-pink span {
   display: inline-block;
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
@@ -549,7 +549,7 @@ main {
   color: rgba(34, 32, 31, 0.75);
 }
 
-.skills-boxes-purple p {
+.skills-boxes-purple span {
   display: inline-block;
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
