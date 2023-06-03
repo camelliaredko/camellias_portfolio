@@ -189,7 +189,7 @@ main {
   line-height: 2em;
 }
 
-.skills-boxes-pink p {
+.skills-boxes-pink span {
   display: inline-block;
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
@@ -201,7 +201,7 @@ main {
   color: rgba(34, 32, 31, 0.75);
 }
 
-.skills-boxes-blue p {
+.skills-boxes-blue span {
   display: inline-block;
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
@@ -213,7 +213,7 @@ main {
   color: rgba(34, 32, 31, 0.75);
 }
 
-.skills-boxes-purple p {
+.skills-boxes-purple span {
   display: inline-block;
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
@@ -395,7 +395,7 @@ shape-outside: circle();
   flex-wrap: wrap;
 }
 
-.tag-pink p {
+.tag-pink span {
   display: inline-block;
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
@@ -408,7 +408,7 @@ shape-outside: circle();
   color: rgba(34, 32, 31, 0.75);
 }
 
-.tag-blue p {
+.tag-blue span {
   display: inline-block;
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
@@ -421,7 +421,7 @@ shape-outside: circle();
   color: rgba(34, 32, 31, 0.75);
 }
 
-.tag-purple p {
+.tag-purple span {
   display: inline-block;
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
