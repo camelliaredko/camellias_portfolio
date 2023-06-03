@@ -95,18 +95,29 @@
   margin-bottom: 5em;
 }
 
+.about-container {
+  display: flex;
+}
+
 .about-image {
-  flex-basis: 25%;
-  flex-shrink: 0;
-  flex-grow: 0;
-  /* width: 25rem;
-  height: 25rem; */
-border-radius: 50%;
+  width: 100%;
+  max-width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
 border: 3px dashed #ea9bee;
 margin: 3em 6em 3em 6em;
 object-fit: cover;
 shape-outside: circle();
-/* margin-right: 3em; */
+
+
+
+
+  /* flex-basis: 25%;
+  max-width: 30rem;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 100%;
+  height: auto; */
 }
 
 .about-text {
@@ -116,6 +127,9 @@ shape-outside: circle();
   margin-right: 6em;
   font-size: 18px;
 }
+
+
+
 
 .about-text h2 {
   font-weight: bold;
@@ -139,7 +153,8 @@ shape-outside: circle();
 }
 
 .project-description {
-  max-width: 40vw;
+  max-width: 100%;
+  margin-bottom: 1em;
 }
 
 .project-item h3 {
@@ -168,31 +183,18 @@ shape-outside: circle();
   border: 3px dashed #635aee;
 }
 
-.project-card-image-big {
+.project-card-image {
   width: 100%;
-  height: 30vh;
-  border-radius: 10px;
-  margin: 0;
-  object-fit: cover;
-  object-position: center;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-}
-
-.project-card-image-small {
-  width: 100%;
-  height: 30vh;
+  /* height: 30vh; */
+  height: auto;
   border-radius: 10px;
   margin: 0;
   object-fit: cover;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-.small-tags-width {
-  max-width: 40vw;
-}
-
-.big-tags-width {
-  max-width: 40vw;
+.tags-width {
+  max-width: 100%;
 }
 
 .tags-container {
@@ -306,34 +308,8 @@ MOBILE STYLES
     margin-left: -50vw;
   }
 
-  .project-card-image-big {
-    width: 80vw;
-    height: 50vh;
-    min-width: 80vw;
-    border-radius: 10px;
-    margin: 0;
-    object-fit: cover;
-  }
-
-  .project-card-image-small {
-    width: 80vw;
-    height: 50vh;
-    min-width: 80vw;
-    border-radius: 10px;
-    margin: 0;
-    object-fit: cover;
-  }
-
   .project-description {
-    max-width: 80vw;
-  }
-
-  .small-tags-width {
-    max-width: 80vw;
-  }
-
-  .big-tags-width {
-    max-width: 80vw;
+    margin-bottom: 1em;
   }
 
   #methods {
@@ -360,8 +336,8 @@ MOBILE STYLES
   }
 
   .about-image {
-    width: 80vw;
-    height: 80vw;
+    /* width: 80vw;
+    height: 80vw; */
     border-radius: 50%;
     border: 3px dashed #ea9bee;
     margin: 5em 2em auto;
@@ -405,11 +381,18 @@ DESKTOP STYLES
   }
 
   #intro-section .maxwidth-container {
-    max-width: 50em;
+    max-width: 60em;
   }
 
   #intro-text {
     align-self: center;
+  }
+
+  #intro-image img {
+    max-width: 20em;
+    height: auto;
+    margin: 1em;
+    padding: 2em;
   }
 
   #intro-image {
