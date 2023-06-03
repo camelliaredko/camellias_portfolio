@@ -86,8 +86,38 @@
   padding: 0;
 }
 
+#about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
 
-.about-content {
+.about-image {
+  border-radius: 50%;
+  border: 3px dashed #ea9bee;
+  object-fit: cover;
+  shape-outside: circle();
+  margin-right: 2em; /* Adjust the margin as needed */
+  /* width: 20em;
+  height: 20em; */
+  max-width: 30%;
+}
+
+.about-text {
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+.about-text h2 {
+  font-weight: bold;
+  font-size: 125%;
+  margin-bottom: 1.5em;
+}
+
+
+/* .about-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -95,29 +125,15 @@
   margin-bottom: 5em;
 }
 
-.about-container {
-  display: flex;
-}
-
 .about-image {
-  width: 100%;
-  max-width: 25vw;
-  height: 25vw;
-  border-radius: 50%;
-border: 3px dashed #ea9bee;
-margin: 3em 6em 3em 6em;
-object-fit: cover;
-shape-outside: circle();
-
-
-
-
-  /* flex-basis: 25%;
-  max-width: 30rem;
+  flex-basis: 25%;
   flex-shrink: 0;
   flex-grow: 0;
-  width: 100%;
-  height: auto; */
+  border-radius: 50%;
+  border: 3px dashed #ea9bee;
+  margin: 3em 6em 3em 6em;
+  object-fit: cover;
+  shape-outside: circle();
 }
 
 .about-text {
@@ -128,19 +144,16 @@ shape-outside: circle();
   font-size: 18px;
 }
 
-
-
-
 .about-text h2 {
   font-weight: bold;
   font-size: 125%;
   margin-bottom: 1.5em;
-}
+} */
 
 #projects-content {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 
@@ -347,8 +360,9 @@ MOBILE STYLES
   .about-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 5em;
   }
 
   .about-text {
@@ -362,6 +376,10 @@ MOBILE STYLES
   .about-text h2 {
     font-size: 150%;
   }
+
+  /* .project-item {
+    flex-basis: 100%;
+  } */
 }
 
 
@@ -404,8 +422,7 @@ DESKTOP STYLES
   .project-item {
     flex-basis: 48%;
     flex-shrink: 0;
-    flex-grow: 0;
-    overflow-x: hidden;
+    flex-grow: 1;
   }
 }
 
