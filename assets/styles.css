@@ -3,7 +3,9 @@
 /* font-family: 'DM Sans', sans-serif;
 font-family: 'Fraunces', serif; */
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
@@ -12,22 +14,44 @@ font-family: 'Fraunces', serif; */
   margin: 0 auto;
 }
 
-.blue { color: #8fb6ff; }
-.periwinkle { color: #635aee; }
-.purple { color: #ea9bee; }
-.pink { color: #ff90c2; }
-.hotpink { color: #FF71B0; }
-.lightpink { color: #ffdde4; }
-.tan { color: #feecd6; }
-.darkgray { color: #22201f; }
-.blue-tag { color: #AECAFF; }
-.pink-tag { color: #FFBBD9; }
-.purple-tag { color: #ECB6EF; }
+.blue {
+  color: #8fb6ff;
+}
+.periwinkle {
+  color: #635aee;
+}
+.purple {
+  color: #ea9bee;
+}
+.pink {
+  color: #ff90c2;
+}
+.hotpink {
+  color: #ff71b0;
+}
+.lightpink {
+  color: #ffdde4;
+}
+.tan {
+  color: #feecd6;
+}
+.darkgray {
+  color: #22201f;
+}
+.blue-tag {
+  color: #aecaff;
+}
+.pink-tag {
+  color: #ffbbd9;
+}
+.purple-tag {
+  color: #ecb6ef;
+}
 
 html {
   color: #240b00;
   background-color: #feecd6;
-} 
+}
 
 a {
   text-decoration: none;
@@ -38,8 +62,12 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: "Fraunces", serif; 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Fraunces", serif;
 }
 
 .transition {
@@ -110,7 +138,7 @@ strong {
 }
 
 .link {
-  color: #FF71B0 !important;
+  color: #ff71b0 !important;
 }
 
 .non-decorated-link {
@@ -121,7 +149,7 @@ strong {
 main {
   position: relative;
   width: 100%;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 0;
   line-height: 1.3em;
 }
@@ -184,7 +212,7 @@ main {
 
 .section-content {
   margin-top: 2em;
-  margin-bottom: 2em; 
+  margin-bottom: 2em;
   width: 100%;
 }
 
@@ -199,7 +227,7 @@ main {
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
   border-radius: 100px;
-  background-color: #FFBBD9;
+  background-color: #ffbbd9;
   color: #22201f;
   font-size: 16px;
   margin: 0.5rem;
@@ -211,7 +239,7 @@ main {
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
   border-radius: 100px;
-  background-color: #AECAFF;
+  background-color: #aecaff;
   color: #22201f;
   font-size: 16px;
   margin: 0.5rem;
@@ -223,7 +251,7 @@ main {
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
   border-radius: 100px;
-  background-color: #ECB6EF;
+  background-color: #ecb6ef;
   color: #22201f;
   font-size: 16px;
   margin: 0.5rem;
@@ -253,7 +281,6 @@ MOBILE STYLES
 ========================================
  */
 @media only screen and (min-width: 0) and (max-width: 50em) {
-  
   #topbar {
     display: flex;
     justify-content: left;
@@ -264,9 +291,9 @@ MOBILE STYLES
     height: 100vh;
     padding: 2em 1em 1em 1em;
     background-color: #ffdde4;
-    border: 1px solid #8fb6ff; 
+    border: 1px solid #8fb6ff;
     transform: translateX(100vw);
-    transition: transform .3s ease-in; 
+    transition: transform 0.3s ease-in;
     position: absolute;
     top: 0;
     left: 0;
@@ -294,7 +321,7 @@ MOBILE STYLES
   button {
     position: absolute;
     top: 0;
-    right: .5em;
+    right: 0.5em;
     padding: 20px 20px;
     background-color: transparent;
     border: none;
@@ -312,26 +339,26 @@ MOBILE STYLES
   }
 
   #navbar.menu-opened #hamburger .line-burger:nth-child(1) {
-    transform: rotate(0deg); 
-    transition: transform 0.3s ease-in-out; 
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
   }
-  
+
   #navbar.menu-opened #hamburger .line-burger:nth-child(2) {
     opacity: 0;
-    transition: opacity 0.3s ease-in-out; 
+    transition: opacity 0.3s ease-in-out;
   }
-  
+
   #navbar.menu-opened #hamburger .line-burger:nth-child(3) {
-    transform: rotate(0deg); 
-    transition: transform 0.3s ease-in-out; 
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
   }
-  
+
   #navbar.menu-opened #hamburger .line-burger:nth-child(1).animate {
-    transform: rotate(45deg) translate(15px, 3px); 
+    transform: rotate(45deg) translate(15px, 3px);
   }
-  
+
   #navbar.menu-opened #hamburger .line-burger:nth-child(3).animate {
-    transform: rotate(-45deg) translate(15px, 4px); 
+    transform: rotate(-45deg) translate(15px, 4px);
   }
 
   .contact-box {
@@ -343,7 +370,6 @@ MOBILE STYLES
   .letter-image {
     margin: 1em 0;
   }
-
 }
 
 /*
@@ -351,10 +377,8 @@ MOBILE STYLES
 DESKTOP STYLES
 ========================================
  */
- @media only screen and (min-width: 50.01em) {
-
+@media only screen and (min-width: 50.01em) {
   button {
     display: none;
-    }
-  
   }
+}

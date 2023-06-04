@@ -104,7 +104,7 @@ main section {
   border: 3px dashed #ea9bee;
   object-fit: cover;
   shape-outside: circle();
-  margin-right: 3em; 
+  margin-right: 3em;
   max-width: 30%;
 }
 
@@ -178,7 +178,7 @@ main section {
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
   border-radius: 100px;
-  background-color: #FFBBD9;
+  background-color: #ffbbd9;
   color: #22201f;
   font-size: 16px;
   margin-right: 0.5em;
@@ -192,7 +192,7 @@ main section {
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
   border-radius: 100px;
-  background-color: #AECAFF;
+  background-color: #aecaff;
   color: #22201f;
   font-size: 16px;
   margin-right: 0.5em;
@@ -206,7 +206,7 @@ main section {
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
   border-radius: 100px;
-  background-color: #ECB6EF;
+  background-color: #ecb6ef;
   color: #22201f;
   font-size: 16px;
   margin-right: 0.5em;
@@ -310,7 +310,7 @@ MOBILE STYLES
     align-items: center;
     padding: 0em 2em;
   }
-  
+
   .about-image {
     border-radius: 50%;
     border: 3px dashed #ea9bee;
@@ -323,9 +323,7 @@ MOBILE STYLES
     margin-left: auto;
     margin-right: auto;
   }
-
 }
-
 
 /*
 =========================================
@@ -333,7 +331,6 @@ DESKTOP STYLES
 ========================================
  */
 @media only screen and (min-width: 50.01em) {
-
   .two-columns {
     display: flex;
   }
@@ -364,8 +361,4 @@ DESKTOP STYLES
     flex-shrink: 0;
     flex-grow: 1;
   }
-
 }
-
-
-

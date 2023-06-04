@@ -13,7 +13,7 @@
 }
 
 .section-line {
-  border-top: 1px solid #FF71B0;
+  border-top: 1px solid #ff71b0;
   width: 100%;
   margin-top: 4em;
   margin-bottom: 4em;
@@ -40,7 +40,7 @@
 .section-quote {
   font-size: 150%;
   line-height: 1.3em;
-  text-align: center; 
+  text-align: center;
 }
 
 .section-image-container {
@@ -68,7 +68,7 @@
 
 #figma-link .section-subtitle {
   margin-top: 0em;
-  margin-bottom: 0em; 
+  margin-bottom: 0em;
 }
 
 .more-projects-image-container {
@@ -147,7 +147,7 @@
 }
 
 .intro-image {
-  max-width: 100%; 
+  max-width: 100%;
   border-radius: 10px;
   border: 3px dashed #8fb6ff;
 }
@@ -156,23 +156,23 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 2em; 
+  margin-top: 2em;
 }
 
 #intro-boxes {
   display: flex;
   flex-direction: column;
-  margin-right: 5em; 
+  margin-right: 5em;
 }
 
 .intro-box {
-  margin-bottom: 2em; 
+  margin-bottom: 2em;
   font-weight: bold;
   display: inline-block;
   padding: 12px;
   text-align: left;
-  border: 3px dashed #AECAFF;
-  background-color: #CADDFF;
+  border: 3px dashed #aecaff;
+  background-color: #caddff;
   color: #22201f;
   position: relative;
   overflow-wrap: break-word;
@@ -206,28 +206,26 @@ MOBILE STYLES
 ========================================
  */
 
-
 @media only screen and (min-width: 0) and (max-width: 50em) {
-
   #intro-information {
     flex-direction: column;
   }
-  
+
   #intro-boxes {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     margin-right: auto;
     margin-left: auto;
   }
-  
+
   .intro-box {
     color: #1f1f22;
     position: relative;
     min-width: 100%;
     max-width: 100%;
     overflow-wrap: break-word;
-  }  
+  }
 
   #intro-section {
     display: flex;
@@ -271,12 +269,12 @@ MOBILE STYLES
   }
 
   .more-projects-image-container {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .more-projects-image-wrapper {
-    width: 95%; 
+    width: 95%;
   }
 
   .page-title-wrapper {
@@ -300,7 +298,6 @@ MOBILE STYLES
     width: 80%;
     transform: translateX(-50%);
   }
-
 }
 
 /*
@@ -309,5 +306,4 @@ DESKTOP STYLES
 ========================================
  */
 @media only screen and (min-width: 50.01em) {
-  
-  }
+}
