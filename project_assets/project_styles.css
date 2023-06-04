@@ -209,21 +209,21 @@ MOBILE STYLES
     flex-direction: column;
   }
   
-  .intro-box {
-    color: #1f1f22;
-    position: relative;
-    min-width: 90%;
-    max-width: 90%;
-    margin-left: auto; 
-    margin-right: auto; 
-    overflow-wrap: break-word;
-  }
-
   #intro-boxes {
     display: flex;
     flex-direction: column;
-    margin-right: 0em; 
+    align-items: center; 
+    margin-right: auto;
+    margin-left: auto;
   }
+  
+  .intro-box {
+    color: #1f1f22;
+    position: relative;
+    min-width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }  
 
   #intro-section {
     display: flex;
@@ -234,10 +234,6 @@ MOBILE STYLES
     align-items: center;
     position: relative;
     line-height: 1.3em;
-  }
-
-  #methods {
-    margin-top: 2em;
   }
 
   .skill-type {
