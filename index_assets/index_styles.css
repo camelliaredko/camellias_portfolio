@@ -104,9 +104,7 @@ main section {
   border: 3px dashed #ea9bee;
   object-fit: cover;
   shape-outside: circle();
-  margin-right: 3em; /* Adjust the margin as needed */
-  /* width: 20em;
-  height: 20em; */
+  margin-right: 3em; 
   max-width: 30%;
 }
 
@@ -223,8 +221,6 @@ main section {
   justify-content: space-between;
   align-items: center;
 }
-
-
 
 /*
 =========================================
@@ -368,6 +364,7 @@ DESKTOP STYLES
     flex-shrink: 0;
     flex-grow: 1;
   }
+
 }
 
 
