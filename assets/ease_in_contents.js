@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   }, {
-    threshold: 0.5 // Adjust the threshold as needed
+    threshold: 0.1 // Adjust the threshold as needed
   });
 
   transitions.forEach(transition => {

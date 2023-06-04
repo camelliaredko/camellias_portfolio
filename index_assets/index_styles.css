@@ -1,3 +1,7 @@
+main section {
+  padding: 5em 0 0 0;
+}
+
 .section-title-wrapper {
   margin-top: 3em;
   margin-bottom: 8em;
@@ -229,11 +233,6 @@ MOBILE STYLES
  */
 
 @media only screen and (min-width: 0) and (max-width: 50em) {
-
-  main section {
-    padding: 12em 0 0 0;
-  }
-
   .two-columns {
     display: flex;
     flex-direction: column-reverse;
@@ -328,7 +327,7 @@ MOBILE STYLES
     margin-left: auto;
     margin-right: auto;
   }
-  
+
 }
 
 
@@ -338,10 +337,6 @@ DESKTOP STYLES
 ========================================
  */
 @media only screen and (min-width: 50.01em) {
-
-  main section {
-    padding: 5em 0 0 0;
-  }
 
   .two-columns {
     display: flex;
