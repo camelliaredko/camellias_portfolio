@@ -91,7 +91,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 2em;
+  padding: 0em 2em;
 }
 
 .about-image {
@@ -221,7 +221,13 @@
   color: rgba(34, 32, 31, 0.75);
 }
 
-
+#contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5em;
+}
 
 
 
@@ -259,32 +265,29 @@ MOBILE STYLES
   #intro-section {
     position: relative;
     line-height: 1.5em;
-    padding-top: 12em; /* re-adding fixed header height of 4em */ 
+    padding-top: 7em;
+  }
+
+  .section-title-wrapper {
+    margin-top: 1em;
+    margin-bottom: 3em;
+    width: 100%;
+    position: relative;
   }
 
   .section-title {
+    position: relative;
+    left: 50%;
+    font-weight: bold;
+    font-size: 150%;
     display: inline-block;
     padding: 12px;
     text-align: center;
     border: 3px dashed #ff90c2;
     background-color: #ffdde4;
     color: #22201f;
-    position: relative;
-    margin: auto;
     width: 50%;
-    /* margin-left: 20%; */
-  }
-
-  .section-title:before {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 1px;
-    border-bottom: 3px dashed #ff90c2;
-    top: 50%;
-    z-index: -1;
-    left: 50%;
-    margin-left: -50vw;
+    transform: translateX(-50%);
   }
 
   .project-description {
@@ -319,7 +322,7 @@ MOBILE STYLES
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    padding: 0em 2em;
   }
   
   .about-image {
@@ -327,9 +330,14 @@ MOBILE STYLES
     border: 3px dashed #ea9bee;
     object-fit: cover;
     shape-outside: circle();
+    margin-top: 2em;
     margin-bottom: 3em;
-    max-width: 75%; 
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+  
 }
 
 
