@@ -131,7 +131,7 @@ main {
   border: 3px dashed #ff90c2;
   margin: auto;
   object-fit: cover;
-  padding: 2em 5%;
+  padding: 2em 2em;
 }
 
 .letter-image {
@@ -149,36 +149,6 @@ main {
   font-size: 110%;
   line-height: 1.5rem;
 }
-
-/*places letter-image above contact-text*/
-/* .contact-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  max-width: 500px;
-  height: auto;
-  border: 3px dashed #ff90c2;
-  margin: auto;
-  padding: 2em 5%;
-  box-sizing: border-box;
-}
-
-.letter-image {
-  width: 100px;
-  height: auto;
-  object-fit: cover;
-  margin-bottom: 1.5em; 
-}
-
-.contact-text {
-  text-align: center;
-  font-weight: bold;
-  font-size: 110%;
-  line-height: 1.5rem;
-} */
-
 
 .icon-container {
   margin-top: 10px;
