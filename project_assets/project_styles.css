@@ -149,7 +149,6 @@
 
 #intro-information {
   display: flex;
-  /* justify-content: center; */
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 2em; 
@@ -238,7 +237,6 @@ MOBILE STYLES
 
   .skill-type {
     margin-top: 0em;
-    /* flex-direction: column; */
     flex-direction: row;
     align-items: center;
   }
