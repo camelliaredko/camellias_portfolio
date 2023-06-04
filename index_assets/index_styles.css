@@ -147,29 +147,17 @@
   margin-top: 0.7em;
 }
 
-.project-blue {
-  border: 3px dashed #8fb6ff;
-}
-
-.project-pink {
-  border: 3px dashed #ff90c2;
-}
-
-.project-purple {
-  border: 3px dashed #ea9bee;
-}
-
-.project-periwinkle {
-  border: 3px dashed #635aee;
-}
-
 .project-card-image {
   width: 100%;
-  /* height: 30vh; */
   height: auto;
   border-radius: 10px;
   margin: 0;
   object-fit: cover;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card-image:hover {
+  transform: scale(1.02);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 

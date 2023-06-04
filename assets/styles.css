@@ -97,6 +97,7 @@ h1, h2, h3, h4, h5 {
 strong {
   font-weight: bold;
 }
+
 .link {
   color: #FF71B0 !important;
 }
@@ -112,6 +113,22 @@ main {
   margin: 0 auto; 
   padding: 0;
   line-height: 1.3em;
+}
+
+.project-blue {
+  border: 3px dashed #8fb6ff;
+}
+
+.project-pink {
+  border: 3px dashed #ff90c2;
+}
+
+.project-purple {
+  border: 3px dashed #ea9bee;
+}
+
+.project-periwinkle {
+  border: 3px dashed #635aee;
 }
 
 #contact-section {
@@ -219,6 +236,11 @@ footer {
   margin-top: 3em;
 }
 
+/*
+=========================================
+MOBILE STYLES
+========================================
+ */
 @media only screen and (min-width: 0) and (max-width: 50em) {
   #topbar {
     display: flex;
