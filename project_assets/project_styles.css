@@ -115,6 +115,7 @@
   background-color: #ffdde4;
   color: #22201f;
   max-width: 80vw;
+  line-height: 1.3em;
 }
 
 .page-title-wrapper:after {
