@@ -88,11 +88,13 @@
       </div>
     </section>
     <section id="intro-description" class="intro-text-section">
-      <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper quis ex sed
-        tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis sodales felis eu tempor.
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eget
-        semper mauris, quis bibendum quam. Aliquam faucibus odio quis est dignissim, id feugiat felis egestas. Nunc a
-        est nibh.</p>
+      <p class="section-text">In the spring of 2023, I took the course HCI Research Project in my master's program.
+        Together with Eva-Maria Strumegger and Luzie Schroeter, we examined HCI-related scientific literature,
+        formulated a meaningful research question, conducted research through a workshop, developed a prototype based on
+        our findings, and then tested and analyzed this prototype. Our work culminated in a scientific research paper we
+        presented at an HCI conference. This paper can be viewed <a
+          href="https://drive.google.com/file/d/16HwgNlYUHIlE8_rCYvcHikBEkVK54lUn/view?usp=sharing" target="_blank"
+          class="hotpink underline">here</a>.</p>
     </section>
     <section id="problem" class="case-study-section">
       <div class="section-line"></div>
@@ -100,9 +102,9 @@
       <h3 class="section-subtitle">Users struggle to convey emotions through text-to-image prompts</h3>
       <p class="section-text">Text-to-image generators have transformed the creative landscape by converting text
         descriptions into unique visual representations. However, <strong>text as an input modality presents challenges
-          for users</strong> due to the need for precise instructions. Conveying emotions through text-to-image prompts
-        is particularly challenging, and <strong>research that has addressed user needs and the usability of such
-          systems has been limited</strong> so far.</p>
+          for users</strong> due to the need for precise instructions [<a href="#references">1</a>]. Conveying emotions through text-to-image prompts
+        is particularly challenging [<a href="#references">2</a>], and <strong>research that has addressed user needs and the usability of such
+          systems has been limited</strong> so far [<a href="#references">3, 4, 5</a>].</p>
     </section>
     <section id="solution" class="case-study-section">
       <div class="section-line"></div>
@@ -111,8 +113,7 @@
         emotional images</h3>
       <div class="section-image-container">
         <img class="section-image" src="./emi_assets/emi_solution1.png" alt="Examples of implemented UI components">
-        <img class="section-image" src="./emi_assets/emi_solution2.png"
-          alt="Ratings of implemented UI components">
+        <img class="section-image" src="./emi_assets/emi_solution2.png" alt="Ratings of implemented UI components">
       </div>
     </section>
     <section id="white-paper-research" class="case-study-section">
@@ -120,9 +121,10 @@
       <h2 class="section-title">WHITE PAPER RESEARCH</h2>
       <h3 class="section-subtitle">A way to generate two times more usable results</h3>
       <p class="section-text">As my group researched ways to facilitate the creation of effective prompts, we came
-        across the idea of structuring searches to produce prompts. Liu et al., for instance, developed a structured
-        search system to guide users through the generation of text-to-image prompts for news illustrations. The results
-        of this study were striking:</p>
+        across the idea of structuring searches to produce prompts. Liu et al. [<a href="#references">6</a>], for instance, developed a structured
+        search system called "Opal" to guide users through the generation of text-to-image prompts for news
+        illustrations. The results
+        of their study were striking:</p>
       <p class="section-quote" style="margin-bottom: 1em;">“Users with [the structured search system] <strong>generated
           two times more usable results</strong> than users without.”</p>
       <!-- <img class="section-image" src="./emi_assets/opal.png" alt="Opal structured search system">
@@ -142,14 +144,16 @@
       <img class="section-image" src="./emi_assets/moodboard.png"
         alt="A moodboard produced with the help of the text-to-image generator Midjourney" height="400">
       <p class="section-text">We had decided to focus on mood boards because they are a visual medium especially focused
-        on communicating emotions, and there was a lack of research in this area.</p>
+        on communicating emotions [<a href="#references">7, 8, 9</a>], and there was a lack of research in this area.</p>
     </section>
     <section id="co-design-workshop" class="case-study-section">
       <div class="section-line"></div>
       <h2 class="section-title">CO-DESIGN WORKSHOP</h2>
       <h3 class="section-subtitle">Gather ideas on such UI components</h3>
       <p class="section-text">In order to address our research question, we conducted a co-design workshop to gather
-        ideas on useful UI components. Our participants were Human-Computer Interaction students with previous experience in creating mood boards and using AI image generator tools. Inspired by <strong>Design Thinking methodology</strong>, our workshop was divided into the following phases:
+        ideas on useful UI components. Our participants were Human-Computer Interaction students with previous
+        experience in creating mood boards and using AI image generator tools. Inspired by <strong>Design Thinking
+          methodology</strong> [<a href="#references">10</a>], our workshop was divided into the following phases:
       <div class="section-image-container">
         <img class="section-image" src="./emi_assets/co-design_workshop.png" alt="Co-design workshop steps">
       </div>
@@ -195,10 +199,15 @@
       <section id="design" class="case-study-section">
         <div class="section-line"></div>
         <h2 class="section-title">USER STUDY</h2>
-        <h3 class="section-subtitle">Users found Emi and its UI components to be very useful</h3>
-        <p class="section-text">We conducted a three-stage user test to investigate the usability as well as the hedonic and pragmatic qualities of the user experience when using the Emi prototype. Moreover, we examined the perceived usefulness of each UI component when it comes to creating emotional images.</p>
+        <h3 class="section-subtitle">Users rated Emi and its UI components positively</h3>
+        <p class="section-text">We conducted a three-stage user test to investigate the usability as well as the hedonic
+          and pragmatic qualities of the user experience when using the Emi prototype. Moreover, we examined the
+          perceived usefulness of each UI component when it comes to creating emotional images.</p>
         <img class="section-image" src="./emi_assets/user-study.png" alt="User study">
-        <p class="section-text">Our evaluation shows that Emi is <strong>user-friendly and effective</strong> in guiding the creation of emotional images for mood boards, and its <strong>hedonic and pragmatic qualities are perceived to be high</strong>. Emi received a System Usability Scale (SUS) score of 75.94, an AttrakDiff score of 1.14 for pragmatic quality, and an AttrakDiff average score of 1.19 for hedonic quality.</p>
+        <p class="section-text">Our evaluation shows that Emi is <strong>user-friendly and effective</strong> in guiding
+          the creation of emotional images for mood boards, and its <strong>hedonic and pragmatic qualities are
+            perceived to be high</strong>. Emi received a System Usability Scale (SUS) score of 75.94, an AttrakDiff
+          score of 1.14 for pragmatic quality, and an AttrakDiff average score of 1.19 for hedonic quality.</p>
         <img class="section-image" src="./emi_assets/emi_solution2.png" alt="Ratings of implemented UI components">
         <img class="section-image" src="./emi_assets/attrakdiff-results.png" alt="AttrakDiff results">
         </p>
@@ -228,13 +237,70 @@
           5.
         </p>
       </section>
-      
-    <section id="references" class="case-study-section">
-      <div class="section-line"></div>
-      <h2 class="section-title">REFERENCES</h2>
-      <p class="section-text">add references here!
-      </p>
-    </section>
+
+      <section id="references" class="case-study-section">
+        <div class="section-line"></div>
+        <h2 class="section-title">REFERENCES</h2>
+        <p class="section-text">
+        <ol>
+          <li>[1] Vivian Liu and Lydia B Chilton. 2022. Design Guidelines for Prompt Engineering Text-to-Image
+            Generative Models. In <em>Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems</em>
+            (New Orleans, LA, USA) (<em>CHI ’22</em>). Association for Computing Machinery, New York, NY, USA, Article
+            384, 23 pages. https://doi.org/10.1145/3491102.3501825
+          </li>
+          <li>
+            [2] Yunlong Wang, Shuyuan Shen, and Brian Y. Lim. 2023. RePrompt: Automatic Prompt Editing to Refine
+            AI-Generative Art Towards Precise Expressions. In <em>Proceedings of the 2023 CHI Conference on Human
+              Factors in Computing Systems</em>, Albrecht Schmidt, Kaisa Väänänen, Tesh Goyal, Per Ola Kristensson,
+            Anicia Peters, Stefanie Mueller, Julie R. Williamson, and Max L. Wilson (Eds.). ACM, New York, NY, USA,
+            1–29. https://doi.org/10.1145/3544548.3581402
+          </li>
+          <li>
+            [3] Yutong Xie, Zhaoying Pan, Jinge Ma, Luo Jie, and Qiaozhu Mei. 2023. A Prompt Log Analysis of
+            Text-to-Image
+            Generation Systems. In <em>Proceedings of the ACM Web Conference 2023</em>, Ying Ding, Jie Tang, Juan Sequeda, Lora
+            Aroyo, Carlos Castillo, and Geert-Jan Houben (Eds.). ACM, New York, NY, USA, 3892–3902.
+            https://doi.org/10.1145/3543507.3587430
+          </li>
+          <li>
+            [4] Michael Muller, Lydia B. Chilton, Anna Kantosalo, Charles Patrick Martin, and Greg Walsh. 2022.
+            GenAICHI: Generative AI and HCI. In <em>CHI Conference on Human Factors in Computing Systems Extended Abstracts</em>, Simone
+            Barbosa, Cliff Lampe, Caroline Appert, and David A. Shamma (Eds.). ACM, New York, NY, USA, 1–7.
+            https://doi.org/10. 1145/3491101.3503719
+          </li>
+          <li>
+            [5] Han Qiao, Vivian Liu, and Lydia Chilton. 2022. Initial Images: Using Image Prompts to Improve Subject
+            Representation in Multimodal AI Generated Art. In <em>Creativity and Cognition</em>. ACM, New York, NY, USA, 15–28.
+            https://doi.org/10.1145/3527927.3532792
+          </li>
+          <li>
+            [6] Vivian Liu, Han Qiao, and Lydia Chilton. 2022. Opal: Multimodal Image Generation for News Illustration.
+            In <em>Proceedings of the 35th Annual ACM Symposium on User Interface Software and Technology</em> (Bend, OR, USA)
+            (UIST ’22). Association for Computing Machinery, New York, NY, USA, Article 73, 17 pages.
+            https://doi.org/10.1145/3526113.3545621
+          </li>
+          <li>
+            [7] T. D. Cassidy. 2008. Mood boards: Current practice in learning and teaching strategies and students’
+            understanding of the process. <em>International Journal of Fashion Design, Technology and Education</em> 1, 1
+            (2008), 43–54. https://doi.org/10.1080/17543260802015154
+          </li>
+          <li>
+            [8] Huang-Ming Chang, Marta Boladeras, Andreu Català, Wei Chen, and Matthias Rauterberg. 2014. Mood Boards
+            as a Universal Tool for Investigating Emotional Experience. https://doi.org/10.1007/978-3-319-07638-6_22
+          </li>
+          <li>
+            [9] Steve Garner and Deana McDonagh-Philp. 2001. Problem Interpretation and Resolution via Visual Stimuli:
+            The Use of ‘Mood Boards’ in Design Education. <em>Journal of Art & Design Education</em> 20, 1 (2001), 57–64.
+            https://doi.org/10.1111/1468-5949.00250
+          </li>
+          <li>
+            [10] Annu Sible Prabhakar. 2021. Design Thinking For Technology Design. In <em>Proceedings of the 22nd Annual
+            Conference on Information Technology Education</em> (SnowBird, UT, USA) (<em>SIGITE ’21</em>). Association for
+            Computing Machinery, New York, NY, USA, 153–154. https: //doi.org/10.1145/3450329.3476873
+          </li>
+        </ol>
+        </p>
+      </section>
 
 
       <section id="more-projects" class="case-study-section">

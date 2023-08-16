@@ -16,7 +16,7 @@
 .section-text,
 .section-quote {
   display: block;
-  margin-bottom: 2.5em;
+  margin-bottom: 1.8em;
 }
 
 .section-title {
@@ -25,7 +25,7 @@
 
 .section-subtitle {
   font-size: 2.5em;
-  margin-bottom: 1.2em;
+  margin-bottom: 0.8em;
   line-height: 1.3em;
 }
 
@@ -209,6 +209,14 @@
   padding: 0 5em;
   max-width: 75rem;
   margin: 0 auto;
+}
+
+#references li {
+  margin-bottom: 1em;
+}
+
+#references em {
+  font-style: italic;
 }
 
 /*
