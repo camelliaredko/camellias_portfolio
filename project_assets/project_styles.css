@@ -47,6 +47,10 @@
   margin-bottom: 1em;
 }
 
+iframe {
+  border: 3px dashed #ff90c2;
+}
+
 .section-image {
   margin-left: auto;
   margin-right: auto;
