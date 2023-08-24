@@ -147,6 +147,10 @@ strong {
   color: inherit;
 }
 
+.rounded-border {
+  border-radius: 10px;
+}
+
 main {
   position: relative;
   width: 100%;
