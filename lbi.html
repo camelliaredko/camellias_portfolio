@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camellia's Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Fraunces&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="stylesheet" href="./project_assets/project_styles.css">
+</head>
+
+<body class='shared-achievements-body'>
+  <header id="topbar">
+    <h1 id="nameplate"><a href="./index.html">Camellia Redko</a></h1>
+    <nav id="navbar" class="menu-closed">
+      <button id='hamburger'>
+        <div class='line-burger'></div>
+        <div class='line-burger'></div>
+        <div class='line-burger'></div>
+      </button>
+      <ul>
+        <li><a href="./index.html#projects-section">Projects</a></li>
+        <li><a href="./index.html#skills-section">Skills</a></li>
+        <li><a href="./index.html#about-section">About</a></li>
+        <li><a href="https://docs.google.com/document/d/1m1tTbKRhQIwwWCsMOK6MDjgxs0tzg-jKlHGJ7yK0LU0/edit?usp=sharing"
+            target="_blank">Résumé</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="page-title-wrapper">
+      <h2 class="page-title">Shared Achievements: Motivating Physical Activity</h2>
+    </div>
+
+    <section id="intro-section" class="section-content maxwidth-container">
+      <img class="intro-image transition" src="./assets/project_4.png" alt="Project image">
+      <div id="intro-information" class="maxwidth-container">
+        <div id="intro-boxes">
+          <div class="intro-box transition"><p>Duration: 16 weeks</p></div>
+          <div class="intro-box transition"><p>My Roles: UX researcher, UX designer, creative technologist</p></div>
+        </div>
+        <div id="skills" class="maxwidth-container">
+          <div id="methods" class="skill-type transition">
+            <img id="methods-icon" class="skills-icons" src="./assets/methods_icon.PNG" alt="Icon representing methods">
+            <div class="skills-boxes-pink">
+              <span>User-Centered Design</span>
+              <span>Interaction Design</span>
+              <span>Participatory Design</span>
+              <span>Design Ideation</span>
+              <span>Multimodal Interaction Design</span>
+              <span>Scenario-based Thinking</span>
+              <span>Workshop Facilitation</span>
+              <span>Physical & Digital Prototyping</span>
+            </div>
+          </div>
+          <div id="tools" class="skill-type transition">
+            <img id="tools-icon" class="skills-icons" src="./assets/tools_icon.PNG" alt="Icon representing tools">
+            <div class="skills-boxes-blue">
+              <span>Figma</span>
+              <span>Arduino</span>
+              <span>React Native</span>
+            </div>
+          </div>
+     
+
+      </div>
+    </section>
+
+    <section id="intro-description" class="intro-text-section">
+      <p class="section-text">In the fall and winter of 2023/2024, I participated in the HCI Industry Project course of my master's program. Together with Lukas Dommershausen, Riccardo Longo, and Eva-Maria Strumegger, we collaborated with the Ludwig Boltzmann Institute for Digital Health and Prevention (LBI) to enhance their research prototype Shared Achievements, a collaborative step-counter app designed to promote physical activity. Over the course of four months, we examined the existing system, ideated new interface and interaction concepts, and designed both a new screen-based visualization and a physical prototype tailored for office environments. We refined our prototype through iterative feedback from stakeholders, resulting in a final demo <a href="https://youtu.be/VRrpaoVlzSI" target="_blank" class="hotpink underline">video</a>.</p>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">PROBLEM</h2>
+      <h3 class="section-subtitle">The original visualization of step-tracking progress was lacking</h3>
+      <div class="section-image-container">
+        <img class="section-image" src="./lbi_assets/sa_mobile_full.png" alt="Screens of the original shared achievements app" style="width: 70%">
+      </div>
+      <p class="section-text">The original Shared Achievements app that was already being developed by the LBI gamified physical activity through collaborative step tracking. Players contributed daily steps to climb a virtual mountain together, and there was a feature for sending encouraging messages to either select members or the entire team. However, <strong>the original mountain metaphor led to misconceptions—many believed they needed to literally walk uphill to make progress.</strong> Our challenge was to design and implement more intuitive, motivating, and possibly physical representations of team progress that would better suit an office setting and increase social accountability.</p>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">SOLUTION</h2>
+      <h3 class="section-subtitle">Implement a flower that blossoms through teamwork</h3>
+      <div class="section-image-container">
+        <img class="section-image" src="./lbi_assets/lbi_final_prototype.png" alt="Final prototype" style="width: 100%">
+      </div>
+      <p class="section-text"> We developed a system that extended the existing Shared Achievements step-counter app by adding a redesigned mobile visualization and a physical prototype: <strong>an interactive flower designed for shared office spaces</strong>. As team members logged their steps, the flower would gradually open, <strong>visually reflecting the team’s collective progress</strong>. It also responded to individual contributions by glowing in the contributor’s color and supported additional interactions such as checking progress, resetting the challenge, and shaking the flower to send motivational messages. <strong>These interactions were iteratively refined through user feedback</strong>, resulting in a socially expressive interface that externalizes progress and <strong>fosters teamwork in a low-effort, ambient way</strong>. </p>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">PROCESS</h2>
+      <h3 class="section-subtitle">Design through research, prototyping, and co-creation</h3>
+      <p class="section-text">Our process began with an in-depth review of LBI’s ongoing research on the existing app, followed by two weeks of hands-on experience using it. Building on these insights, we generated and discussed various visualization metaphors using moodboards—including wall clocks, puzzles, and marbles—ultimately selecting the concept of a blooming flower. We prototyped the flower using 3D printing and Arduino, and developed complementary mobile interfaces in React Native. Feedback from a co-design workshop with stakeholders informed the refinement of the final interaction set, which we then implemented and documented.</p>
+      <div class="section-image-container">
+        <img class="section-image" src="./lbi_assets/project_timeline.png" alt="Final prototype" style="width: 100%">
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">INTERACTIONS</h2>
+      <h3 class="section-subtitle">Turn steps into shared moments</h3>
+      <p class="section-text">  
+      We transformed individual step counts into tangible, ambient interactions that subtly encouraged collective engagement. Through five carefully designed behaviors using light, motion, and gesture-based feedback, we aimed to externalize progress in a way that felt both intuitive and socially meaningful. Rather than demanding attention, the prototype served as a quiet presence in the office, gently reinforcing shared effort. Over time, its gradual blooming became a small but recognizable ritual of teamwork. We designed the following five final interactions:
+      </p>
+      <ul class="interaction-list">
+        <li>
+          <p><strong>1. Contributing Steps:</strong> The flower lights up in the player’s color and opens slightly more, visually marking progress.</p>
+          <div class="section-image-container">
+            <img class="section-image" src="./lbi_assets/1_contributing_steps.png" alt="Contributing steps interaction" style="width: 60%">
+          </div>
+        </li>
+        <li>
+          <p><strong>2. Reaching the Goal:</strong> A celebratory melody plays as the flower opens fully, displays team colors, and stays open.</p>
+          <div class="section-image-container">
+            <img class="section-image" src="./lbi_assets/2_reaching_goal.png" alt="Reaching the goal interaction" style="width: 100%">
+          </div>
+        </li>
+        <li>
+          <p><strong>3. Resetting the Challenge:</strong> A close-range gesture resets the flower and starts a new challenge after briefly showing the team color and playing a sound.</p>
+          <div class="section-image-container">
+            <img class="section-image" src="./lbi_assets/3_resetting_challenge.png" alt="Resetting challenge interaction" style="width: 55%">
+          </div>
+        </li>
+        <li>
+          <p><strong>4. Checking Status:</strong> Approaching the flower temporarily forces it open with a flashing light, allowing for a quick progress check.</p>
+          <div class="section-image-container">
+            <img class="section-image" src="./lbi_assets/4_checking_status.png" alt="Checking status interaction" style="width: 100%">
+          </div>
+        </li>
+        <li>
+          <p><strong>5. Sending Motivation:</strong> Shaking the flower triggers a confirmation sound and sends a motivational message to the whole team.</p>
+          <div class="section-image-container">
+            <img class="section-image" src="./lbi_assets/5_sending_motivation.png" alt="Sending motivational message interaction" style="width: 80%">
+          </div>
+        </li>
+      </ul>
+    </section>
+    
+  </section>
+  <section id="final-prototype" class="case-study-section">
+    <div class="section-line"></div>
+    <h2 class="section-title">FINAL PROTOTYPE</h2>
+    <h3 class="section-subtitle">Bring the concept to life</h3>
+    <p class="section-text">
+      From awkward curiosity to excited team pride, this video demonstrates how our prototype evolved into a small but meaningful part of the team’s week.
+    </p>
+    <div class="section-video" style="margin-top: 1.2em;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/8NmRvPK19hk" allowfullscreen></iframe>
+    </div>
+    <p class="section-text" style="margin-top: 1.8em;">
+      A detailed report of this project can be read 
+      <a href="https://docs.google.com/document/d/1dKn1n4HR7knmuzsXREmIRv1f5iLF5o-_qlD0se-n3Ds/edit?usp=sharing" target="_blank" class="hotpink underline">here</a>.
+    </p>
+  </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">CONCLUSION & LESSONS</h2>
+      <h3 class="section-subtitle">Lessons learned</h3>
+      <p class="section-text">
+        <strong>1. Design decisions must consider feasibility early on.</strong><br>
+        The blooming flower metaphor was conceptually compelling and well-received, but implementing it involved technical constraints we had not fully anticipated. Some of the Arduino components, such as the servo motor required for the flower's movement, were difficult to find and integrate; working around these limitations cost us significant time. In future projects, I will carefully evaluate technical feasibility earlier in the design process to ensure that promising ideas can be implemented with the available resources.
+        <br><br>
+        <strong>2. Ongoing stakeholder feedback enhanced design quality.</strong><br>
+        One of the most helpful aspects of this project was our ongoing dialogue with the LBI. Instead of saving feedback for the end, we shared ideas regularly and made room for iteration along the way. Their input was helpful and challenged us to think critically, keeping our work grounded while giving us room to be creative. Overall, I am incredibly thankful for the LBI's support.
+        <br><br>
+        <strong>3. Clear, iterative milestones support better team alignment.</strong><br>
+        Early on, we outlined a broad project timeline, but we did not break tasks down as much as we should have. This became especially clear during the 3D printing phase, where there were unforeseen delays. In future projects, I plan to set shorter, clearer goals and revisit them regularly to help the team stay aligned and adaptable.
+        <br><br>
+        <strong>4. Real user engagement revealed what we could not predict alone.</strong><br>
+        Our stakeholder workshop made a real difference. Watching participants interact with the prototype revealed subtle usability issues we had not noticed. It also gave rise to entirely new ideas, like the “shake-to-send-encouragement” interaction. The experience reminded me how essential it is to involve real users early in the design process—not only to validate ideas, but also to uncover possibilities we might not have imagined on our own. 
+    </p>
+    </section>
+
+      <section id="more-projects" class="case-study-section">
+        <div class="section-line"></div>
+        <h2 class="section-title">MORE PROJECTS</h2>
+        <div class="more-projects-image-container transition">
+          <div class="more-projects-image-wrapper">
+            <a href="./1_2_oder_3_for_menstruation_education.html"><img class="more-projects-section-image project-pink" src="./assets/project_2.png" alt="Project 2"></a>
+            <a href="./1_2_oder_3_for_menstruation_education.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">1, 2 oder 3 for Menstruation Education</h3></a>
+          </div>
+          <div class="more-projects-image-wrapper">
+            <a href="./mistoe.html"><img class="more-projects-section-image project-blue" src="./assets/project_3.png" alt="MisToe"></a>
+            <a href="./mistoe.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">MisToe</h3></a>
+          </div>
+          <div class="more-projects-image-wrapper">
+            <a href="./collabart.html"><img class="more-projects-section-image project-periwinkle" src="./assets/project_4.png" alt="CollabArt"></a>
+            <a href="./collabart.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">CollabArt</h3></a>
+          </div>
+        </div>
+      </section>
+      <div class="case-study-section">
+        <div class="section-line"></div>
+      </div>
+      <section id="contact-section">
+        <div class="contact-box transition">
+          <img class="letter-image" src="./assets/letter.png" alt="Letter">
+          <div class="contact-text">
+            <h2>Email:</h2>
+            <h2 class="pink">camelliaredko@gmail.com</h2>
+          </div>
+        </div>
+      </section>
+  </main>
+  <footer>
+    <span class="blue" style="padding-top: 10px;">&copy; Camellia Redko.</span>
+    <nav>
+      <div class="icon-container">
+        <a href="https://github.com/camelliaredko">
+          <i class="fab fa-github" style="margin-right: 16px; font-size: 24px; color: #8fb6ff;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/camelliaredko/">
+          <i class="fab fa-linkedin" style="font-size: 24px; color: #8fb6ff;"></i>
+        </a>
+      </div>
+    </nav>
+  </footer>
+  <script src='./assets/hamburger.js'></script>
+  <script src='./assets/ease_in_contents.js'></script>
+</body>
+</html>
