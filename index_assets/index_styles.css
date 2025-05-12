@@ -37,8 +37,8 @@ main section {
   background: linear-gradient(to bottom, #ffdde4, #feecd6);
   font-weight: bolder;
   font-size: 115%;
-  padding-top: 16em;
-  margin-bottom: 7em;
+  padding-top: 8em;
+  margin-bottom: 0em;
 }
 
 #intro-text {
