@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camellia's Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Fraunces&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="stylesheet" href="./project_assets/project_styles.css">
+</head>
+
+<body class='translation-bot-body'>
+  <header id="topbar">
+    <h1 id="nameplate"><a href="./index.html">Camellia Redko</a></h1>
+    <nav id="navbar" class="menu-closed">
+      <button id='hamburger'>
+        <div class='line-burger'></div>
+        <div class='line-burger'></div>
+        <div class='line-burger'></div>
+      </button>
+      <ul>
+        <li><a href="./index.html#projects-section">Projects</a></li>
+        <li><a href="./index.html#skills-section">Skills</a></li>
+        <li><a href="./index.html#about-section">About</a></li>
+        <li><a href="https://docs.google.com/document/d/1m1tTbKRhQIwwWCsMOK6MDjgxs0tzg-jKlHGJ7yK0LU0/edit?usp=sharing"
+            target="_blank">Résumé</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="page-title-wrapper">
+      <h2 class="page-title">Context-Aware Translation Assistant Bot</h2>
+    </div>
+
+    <section id="intro-section" class="section-content maxwidth-container">
+      <img class="intro-image transition" src="./assets/translation_bot_poster.png" alt="Project poster image">
+      <div id="intro-information" class="maxwidth-container">
+        <div id="intro-boxes">
+          <div class="intro-box transition"><p>Duration: 10 weeks</p></div>
+          <div class="intro-box transition">
+            <p>My Roles: Solo researcher, designer, and developer</p>
+          </div>          
+        <div id="skills" class="maxwidth-container">
+          <div id="methods" class="skill-type transition">
+            <img id="methods-icon" class="skills-icons" src="./assets/methods_icon.PNG" alt="Methods icon">
+            <div class="skills-boxes-pink">
+              <span>Technology Probe</span>
+              <span>Diary Study</span>
+              <span>Thematic Analysis</span>
+              <span>Context-Aware Design</span>
+              <span>Interaction Design</span>
+              <span>UX Evaluation</span>
+              <span>Prototyping</span>
+            </div>
+          </div>
+          <div id="tools" class="skill-type transition">
+            <img id="tools-icon" class="skills-icons" src="./assets/tools_icon.PNG" alt="Tools icon">
+            <div class="skills-boxes-blue">
+              <span>Discord API</span>
+              <span>Google Translate API</span>
+              <span>Google Cloud</span>
+              <span>GPT-4</span>
+              <span>Miro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="intro-description" class="intro-text-section">
+      <p class="section-text">
+        As part of my Advanced Contextual Interfaces course in the fall and winter of 2023/2024, I independently designed, developed, and evaluated a translation assistant bot that provided corrective feedback to German learners during real-time conversations in a Discord server. The bot acted as a <strong>technology probe</strong>—a simple, functional prototype intended to spark reflection and uncover design opportunities. Over the course of a week, participants chatted in a shared space and privately shared their thoughts in response to diary prompts I provided. Thematic analysis of these reflections gave me valuable insight into how the bot was helpful and when it felt too intrusive or broke the conversational flow. Based on these insights, I proposed both <strong>context-aware adaptations</strong> (e.g., activity-sensitive reminders, adaptive explanation lengths) and <strong>non-context-aware refinements</strong> (e.g., click-to-reveal translations) to enhance the user experience of the bot.
+      </p>
+    </section>    
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">PROBLEM</h2>
+      <h3 class="section-subtitle">Getting feedback while practicing a language is challenging</h3>
+      <p class="section-text">
+        Feedback provided during conversational interaction facilitates foreign language acquisition [<a href="#references">1</a>], yet many language learners face challenges with receiving such feedback. Human tutors can be costly [<a href="#references">2</a>], and conversations with corrective AI alone may lack the fulfilling aspects of human-to-human interaction [<a href="#references">3</a>, <a href="#references">4</a>, <a href="#references">5</a>].
+      </p>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">SOLUTION</h2>
+      <h3 class="section-subtitle">A correction tool that supports learning in human-to-human interactions</h3>
+      <div class="section-image-container">
+        <img class="section-image" src="./project_assets/figure_1_interface.png" alt="Figure 1: Screenshot of the Bot Interface" style="max-width: 100%;">
+        <p class="image-credit" style="text-align: center; margin-top: 0.5em;">Figure 1: Screenshot of the Bot Interface</p>
+      </div>
+      <p class="section-text">
+        I developed a translation assistant bot to support language learners directly within Discord conversations. Hosted on Google Cloud and connected through the Discord API, the bot detects whether a message is written in German or English using the Google Translate API. If a message is in German, the bot provides an English translation to help users verify their understanding, then translates the message back into grammatically correct German, possibly offering a more natural alternative. English messages are simply translated into German.
+      </p>
+      <p class="section-text" style="margin-top: 1.5em;">
+        Although the bot worked as intended, the broader goal of the course was to investigate how tools like this could better respond to people’s needs in context. I used this initial version as a technology probe to identify where the bot was helpful and where it was disruptive. These moments gave me insight into how I could better design for context to enhance the overall user experience of the bot. 
+      </p>      
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">METHODS</h2>
+      <h3 class="section-subtitle">Probing for insight through live interactions and diary reflections</h3>
+      <div class="section-image-container">
+        <img class="section-image" src="./project_assets/figure_1_interface.png" alt="Figure 2: Flow Diagram of the Original Probe" style="max-width: 100%;">
+        <p class="image-credit" style="text-align: center; margin-top: 0.5em;">Figure 2: Flow Diagram of the Original Probe</p>
+      </div>
+      <p class="section-text">
+        To understand how learners experienced the bot in practice, I conducted a one-week <strong>diary study</strong> with nine German learners. While participants chatted in a shared Discord channel, the bot provided corrections and translations in real time. They responded to diary prompts encouraging them to reflect on the bot’s functionality, their emotional responses, and how the feedback influenced their relationship with the language. This setup served as a <strong>technology probe</strong>—a simple, functioning prototype designed to reveal insights through use [<a href="#references">6</a>]. 
+      </p>      
+    </section>
+   
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">ANALYSIS & FINDINGS</h2>
+      <h3 class="section-subtitle">Thematic insights into user needs</h3>
+      <div class="section-image-container">
+        <img class="section-image" src="./project_assets/figure_1_interface.png" alt="[IMAGES: Figure 3 (Spreadsheet of Thematic Codes), Figure 4 (Affinity Diagram)]" style="max-width: 100%;">
+        <p class="image-credit" style="text-align: center; margin-top: 0.5em;">Figure 1: Screenshot of the Bot Interface</p>
+      </div>
+      <p class="section-text">
+        I conducted a <strong>thematic analysis</strong> of the diary entries, organizing reflections into a spreadsheet and later mapping them into an <strong>affinity diagram</strong> using Miro. This process helped surface recurring tensions, desires, and emotional reactions. Six out of nine participants submitted diary entries on multiple days, offering a valuable longitudinal view into how their perceptions evolved over time.
+      </p>
+    
+      <p class="section-text" style="margin-top: 1.5em;">
+        Many learners described the bot as helpful and confidence-boosting. They appreciated receiving immediate feedback, especially for grammar and word choice. Some mentioned that seeing their mistakes corrected helped them better understand sentence structure and notice patterns in their writing. The bot’s ability to handle messages that mixed German and English made it easier for learners to participate without fear of making mistakes. Others highlighted that it removed the need to switch to external tools like translators, streamlining the learning process. A few even reported feeling more motivated to write and speak German regularly, noting improved comfort and reduced anxiety when using the language.
+      </p>
+    
+      <p class="section-text" style="margin-top: 1.5em;">
+        Despite these benefits, several participants found the bot too intrusive at times, particularly when many people were chatting at once. Some wished they could turn off or hide its feedback temporarily, or at least choose when to see it. Others wished for brief explanations behind the bot’s corrections. These insights pointed to a need for <strong>context-aware adaptations</strong> that could preserve the benefits of real-time feedback while giving users more control and reducing disruptions. This became the basis for my redesign.
+      </p>
+    </section>
+    
+    
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">DESIGN MODIFICATIONS</h2>
+      <h3 class="section-subtitle">Balancing usefulness and intrusiveness through adaptive feedback</h3>
+      <div class="section-image-container">
+        <img class="section-image" src="./project_assets/figure_1_interface.png" alt="Figure 6–8: Interface and flow diagrams of adaptive feedback features" style="max-width: 100%;">
+        <p class="image-credit" style="text-align: center; margin-top: 0.5em;">Figures 6–8: Interface and flow diagrams of adaptive feedback features</p>
+      </div>
+    
+      <p class="section-text">
+        Based user feedback, I designed two types of modifications: general interface refinements and context-aware behaviors that adapt based on conversation activity levels.
+      </p>
+    
+      <h4 class="section-subheading" style="margin-top: 1.5em;">General Improvements</h4>
+      <ul class="interaction-list">
+        <li><strong>Click-to-reveal translations:</strong> English translations are hidden by default using Discord’s <code>||text||</code> formatting, which conceals the text until the user clicks to reveal it. This reduces visual clutter and supports learners who prefer to quiz themselves on meaning before checking.</li>
+
+        <li><strong>Streamlined feedback layout:</strong> The bot no longer displays usernames in its correction messages as this added little value and removing them made corrections less visually overwhelming.</li>
+      </ul>
+    
+      <h4 class="section-subheading" style="margin-top: 1.5em;">Context-Aware Adaptations</h4>
+      <ul class="interaction-list">
+        <li><strong>Adaptive explanation lengths:</strong> When a user reacts to a correction with a ❓ emoji, the bot uses GPT-4 to generate an explanation. If conversation activity is high, the explanation defaults to a shorter version. Users can request a longer version, and the bot remembers this preference over time.</li>
+    
+        <li><strong>Disruption-aware reminders:</strong> When the message volume passes the overload threshold, the bot occasionally and discreetly reminds users that they can temporarily pause it using the <code>/pause</code> command.</li>
+      </ul>
+    
+      <p class="section-text" style="margin-top: 1.5em;">
+        These changes were designed to preserve the bot’s core functionality while responding more gracefully to user needs in highly active conversations.
+      </p>
+    </section>
+    
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">FULL REPORT</h2>
+      <p class="section-text">
+        A detailed account of my research methods, data analysis, and design decisions can be read <a href="https://drive.google.com/file/d/1tBm7oNPh9-ZmKno5Lj4sxRoF2NcpVFqn/view?usp=sharing" target="_blank" class="hotpink underline">here</a>.
+      </p>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">REFLECTIONS & LESSONS LEARNED</h2>
+      <h3 class="section-subtitle">Toward responsible and responsive design</h3>
+      <p class="section-text">
+        This project deepened my understanding of how socially and emotionally sensitive AI feedback must be—especially when embedded in human-to-human interactions. Designing adaptivity was not merely a technical endeavor, but a relational one: it required anticipating emotional states, respecting personal learning rhythms, and minimizing disruption during natural conversation. 
+        <br><br>
+        I also grappled with broader ethical dimensions of context-aware systems, including how to respect user privacy, avoid unnecessary surveillance, and reduce environmental strain. Rather than designing a hyper-personalized system that continuously tracked behavior, I opted for lightweight, privacy-conscious adaptations grounded in user feedback and research. This balance—between responsiveness and responsibility—now shapes how I approach ethical AI design.
+        <br><br>
+        <strong>What I learned along the way:</strong>
+        <br><br>
+        <strong>1. Adaptivity must be user-aligned, not just context-aware.</strong><br>
+        Allowing users to override shortened explanations taught me that meaningful personalization is often about giving control—not just automating based on external conditions.
+        <br><br>
+        <strong>2. Lightweight privacy-first solutions often win.</strong><br>
+        I initially considered elaborate tracking mechanisms, but ultimately realized that simple, thoughtful design can often meet needs more ethically and effectively.
+        <br><br>
+        <strong>3. Emotional nuance matters in interface design.</strong><br>
+        Some participants appreciated the bot’s help—others felt overwhelmed by its presence. This taught me that timing, tone, and subtlety in feedback delivery are as critical as correctness.
+        <br><br>
+        <strong>4. Thematic analysis builds empathy.</strong><br>
+        Through diary entries, I uncovered not just surface-level usability issues, but deep emotional tensions—such as the desire to grow without over-relying on automated help. These insights reshaped my priorities as a designer.
+      </p>
+    </section>    
+    
+    <section id="references" class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">REFERENCES</h2>
+      <ol>
+        <ol>
+          <li>[1] Alison Mackey. 2006. Feedback, Noticing and Instructed Second Language Learning. <em>Applied Linguistics 27, 3</em>, 405–430. DOI: https://doi.org/10.1093/applin/ami051.</li>
+          <li>[2] Hao Zheng, Rob K. Marjerison, and Oliver R. Keels. 2021. Shopping for an English Language Tutor. In José M. Sáiz Álvarez and Beatriz Olalla-Caballero (Eds.), <em>Quality Management for Competitive Advantage in Global Markets</em>, 232–248. IGI Global, Hershey. DOI: https://doi.org/10.4018/978-1-7998-5036-6.ch013.</li>
+          <li>[3] José Belda-Medina and José R. Calvo-Ferrer. 2022. Using Chatbots as AI Conversational Partners in Language Learning. <em>Applied Sciences 12, 17</em>, 8427. DOI: https://doi.org/10.3390/app12178427.</li>
+          <li>[4] Laura Jones. 2023. Learning Languages: Human or AI? Insights from a Recent Survey. Retrieved December 29, 2023, from https://www.lingoda.com/en/p/research/future-language-learning-human-ai/.</li>
+          <li>[5] Anne Zimmerman, Joel Janhonen, and Emily Beer. 2023. Human/AI Relationships: Challenges, Downsides, and Impacts on Human/Human Relationships. <em>AI Ethics</em>. DOI: https://doi.org/10.1007/s43681-023-00348-8.</li>
+          <li>[6] Hilary Hutchinson, Wendy Mackay, Bo Westerlund, Benjamin B. Bederson, Allison Druin, Catherine Plaisant, Michel Beaudouin-Lafon, Stéphane Conversy, Helen Evans, Heiko Hansen, Nicolas Roussel, and Björn Eiderbäck. 2003. Technology probes. In <em>CHI 2003: New Horizons—Proceedings of the Conference on Human Factors in Computing Systems</em>, 5(1). ACM Press, New York, NY, 17–24. DOI: https://doi.org/10.1145/642611.642616.</li>
+        </ol>        
+    </section>
+    <section id="more-projects" class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">MORE PROJECTS</h2>
+      <div class="more-projects-image-container transition">
+        <div class="more-projects-image-wrapper">
+          <a href="./emi.html"><img class="more-projects-section-image project-pink" src="./assets/project_1.png" alt="Emi"></a>
+          <a href="./emi.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">Emi</h3></a>
+        </div>
+        <div class="more-projects-image-wrapper">
+          <a href="./mistoe.html"><img class="more-projects-section-image project-blue" src="./assets/project_3.png" alt="MisToe"></a>
+          <a href="./mistoe.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">MisToe</h3></a>
+        </div>
+        <div class="more-projects-image-wrapper">
+          <a href="./collabart.html"><img class="more-projects-section-image project-periwinkle" src="./assets/project_4.png" alt="CollabArt"></a>
+          <a href="./collabart.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">CollabArt</h3></a>
+        </div>
+      </div>
+    </section>
+    <div class="case-study-section">
+      <div class="section-line"></div>
+    </div>
+    <section id="contact-section">
+      <div class="contact-box transition">
+        <img class="letter-image" src="./assets/letter.png" alt="Letter">
+        <div class="contact-text">
+          <h2>Email:</h2>
+          <h2 class="pink">camelliaredko@gmail.com</h2>
+        </div>
+      </div>
+    </section>
+</main>
+<footer>
+  <span class="blue" style="padding-top: 10px;">&copy; Camellia Redko.</span>
+  <nav>
+    <div class="icon-container">
+      <a href="https://github.com/camelliaredko">
+        <i class="fab fa-github" style="margin-right: 16px; font-size: 24px; color: #8fb6ff;"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/camelliaredko/">
+        <i class="fab fa-linkedin" style="font-size: 24px; color: #8fb6ff;"></i>
+      </a>
+    </div>
+  </nav>
+</footer>
+<script src='./assets/hamburger.js'></script>
+<script src='./assets/ease_in_contents.js'></script>
+</body>
+</html>
+
