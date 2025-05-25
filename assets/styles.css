@@ -269,6 +269,19 @@ main {
   margin: 10px 16px;
 }
 
+.image-label {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #582138;
+  margin-top: 0.5em;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.image-label a {
+  color: #8fb6ff;
+  text-decoration: underline;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
