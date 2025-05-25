@@ -360,6 +360,6 @@ DESKTOP STYLES
   .project-item {
     flex-basis: 48%;
     flex-shrink: 0;
-    flex-grow: 1;
+    flex-grow: 0;
   }
 }

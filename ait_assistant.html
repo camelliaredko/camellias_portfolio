@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camellia's Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Fraunces&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="stylesheet" href="./project_assets/project_styles.css">
+</head>
+
+<body class='ait-assistant-body'>
+  <header id="topbar">
+    <h1 id="nameplate"><a href="./index.html">Camellia Redko</a></h1>
+    <nav id="navbar" class="menu-closed">
+      <button id='hamburger'>
+        <div class='line-burger'></div>
+        <div class='line-burger'></div>
+        <div class='line-burger'></div>
+      </button>
+      <ul>
+        <li><a href="./index.html#projects-section">Projects</a></li>
+        <li><a href="./index.html#skills-section">Skills</a></li>
+        <li><a href="./index.html#about-section">About</a></li>
+        <li><a href="https://docs.google.com/document/d/1m1tTbKRhQIwwWCsMOK6MDjgxs0tzg-jKlHGJ7yK0LU0/edit?usp=sharing"
+            target="_blank">Résumé</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+ 
+    <div class="page-title-wrapper">
+      <h2 class="page-title">AIT Assistant: Designing Trustworthy AI for the Workplace</h2>
+    </div>
+    <section id="intro-section" class="section-content maxwidth-container">
+      <img class="intro-image" src="./assets/project_ait.png" alt="AIT Assistant prototype screenshot">
+      <div id="intro-information" class="maxwidth-container">
+        <div id="intro-boxes">
+          <div class="intro-box">
+            <p>Duration: 6 months (Master’s Thesis)</p>
+          </div>
+          <div class="intro-box">
+            <p>My Roles: UX researcher, Interaction designer, Prompt engineer</p>
+          </div>
+        </div>
+        <div id="skills" class="maxwidth-container">
+          <div id="methods" class="skill-type transition">
+            <img id="methods-icon" class="skills-icons" src="./assets/methods_icon.PNG" alt="Icon representing methods">
+            <div class="skills-boxes-pink">
+              <span>Mixed-Methods Research</span>
+              <span>Usability Testing</span>
+              <span>Critical Incident Technique</span>
+              <span>Survey Design</span>
+              <span>Interviewing</span>
+              <span>Thematic Analysis</span>
+              <span>UX Writing</span>
+              <span>Prompt Engineering</span>
+              <span>Design for Trust</span>
+              <span>Design Documentation</span>
+            </div>
+          </div>
+          <div id="tools" class="skill-type transition">
+            <img id="tools-icon" class="skills-icons" src="./assets/tools_icon.PNG" alt="Icon representing tools">
+            <div class="skills-boxes-blue">
+              <span>Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-text-section">
+      <p class="section-text">
+        My master's thesis focused on designing and evaluating <strong>AIT Assistant</strong>—an LLM-powered workplace chatbot that helps employees locate Quality Management documents while promoting fact-checking. I led the end-to-end research and design process, combining UX methods with LLM prompt engineering to create an interface that balanced <strong>efficiency, transparency, and trust</strong>.
+      </p>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">PROBLEM</h2>
+      <h3 class="section-subtitle">Users often trust LLMs—but don’t verify</h3>
+      <p class="section-text">
+        Despite the risks of hallucinations, users rarely verify information provided by LLMs. Prior studies (e.g. Budiu et al., 2023) showed minimal fact-checking in commercial systems like ChatGPT. I aimed to investigate how <strong>interface and contextual factors</strong> influence trust, usability, and verification behavior in an LLM-powered workplace tool.
+      </p>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">SOLUTION</h2>
+      <h3 class="section-subtitle">Designing a verification-friendly chatbot</h3>
+      <p class="section-text">
+        I designed a prototype that foregrounded document transparency and encouraged verification using sections like "Passages Used to Generate Answer," "Reasoning and Assumptions," and a persistent "Warning Message." These were complemented by prompt-engineered AI responses structured for clarity and traceability.
+      </p>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">RESEARCH</h2>
+      <h3 class="section-subtitle">Mixed-methods study with real users</h3>
+      <p class="section-text">
+        I conducted a three-phase study with 16 employees at the Austrian Institute of Technology:
+        <ul>
+          <li>Exploratory usability testing</li>
+          <li>Scenario-based fact-checking tasks</li>
+          <li>Post-task surveys and in-depth interviews</li>
+        </ul>
+        I applied the Critical Incident Technique, ISO 9241-11 usability metrics, and thematic coding to analyze behavioral patterns, interface pain points, and design implications.
+      </p>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">FINDINGS</h2>
+      <h3 class="section-subtitle">Trust and verification can coexist</h3>
+      <p class="section-text">
+        Participants <strong>engaged in verification despite trusting the AI</strong>, especially when interface cues like document excerpts and relevance bars were salient. However, <strong>overly long AI responses</strong> and poor visual hierarchy <strong>reduced usability</strong> and discouraged engagement. Key findings:
+        <ul>
+          <li>Trust was driven by ability, integrity, and transparency.</li>
+          <li>Verification was triggered by task importance, unclear answers, or design cues.</li>
+          <li>Warnings and side-by-side layouts improved user awareness and behavior.</li>
+        </ul>
+      </p>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">RESULT</h2>
+      <h3 class="section-subtitle">Design lessons for LLM-integrated tools</h3>
+      <p class="section-text">
+        The final prototype received strong usability scores (SUS = 79.38) and pragmatic UEQ-S scores. My work contributed design implications for future AI interfaces:
+        <ul>
+          <li>Communicating limitations can build trust—when well integrated</li>
+          <li>Fact-checking should be <strong>easy, intuitive, and encouraged by design</strong></li>
+          <li>Structured AI responses help reduce cognitive overload</li>
+        </ul>
+      </p>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">REFLECTION</h2>
+      <h3 class="section-subtitle">Design is not just features—it’s context</h3>
+      <p class="section-text">
+        This project taught me that even well-intentioned features can fail if users don’t understand or notice them. I learned to consider <strong>placement, visual prominence, and clarity</strong> as central to usable transparency. Collaborating closely with developers also helped me iterate design decisions based on <strong>LLM limitations and response latency</strong>, deepening my cross-functional skills.
+      </p>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">WANT THE FULL STORY?</h2>
+      <p class="section-text">
+        You can read my full thesis <a href="YOUR_THESIS_LINK_HERE" class="hotpink underline">here</a> and view the Figma prototype <a href="YOUR_FIGMA_LINK_HERE" class="hotpink underline">here</a>.
+      </p>
+    </section>
+      <section id="more-projects" class="case-study-section">
+        <div class="section-line"></div>
+        <h2 class="section-title">MORE PROJECTS</h2>
+        <div class="more-projects-image-container transition">
+          <div class="more-projects-image-wrapper">
+            <a href="./emi.html"><img class="more-projects-section-image project-pink" src="./assets/project_1.png" alt="Emi"></a>
+            <a href="./emi.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">Emi</h3></a>
+          </div>
+          <div class="more-projects-image-wrapper">
+            <a href="./mistoe.html"><img class="more-projects-section-image project-blue" src="./assets/project_3.png" alt="MisToe"></a>
+            <a href="./mistoe.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">MisToe</h3></a>
+          </div>
+          <div class="more-projects-image-wrapper">
+            <a href="./collabart.html"><img class="more-projects-section-image project-periwinkle" src="./assets/project_4.png" alt="CollabArt"></a>
+            <a href="./collabart.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">CollabArt</h3></a>
+          </div>
+        </div>
+      </section>
+      <div class="case-study-section">
+        <div class="section-line"></div>
+      </div>
+      <section id="contact-section">
+        <div class="contact-box transition">
+          <img class="letter-image" src="./assets/letter.png" alt="Letter">
+          <div class="contact-text">
+            <h2>Email:</h2>
+            <h2 class="pink">camelliaredko@gmail.com</h2>
+          </div>
+        </div>
+      </section>
+  </main>
+  <footer>
+    <span class="blue" style="padding-top: 10px;">&copy; Camellia Redko.</span>
+    <nav>
+      <div class="icon-container">
+        <a href="https://github.com/camelliaredko">
+          <i class="fab fa-github" style="margin-right: 16px; font-size: 24px; color: #8fb6ff;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/camelliaredko/">
+          <i class="fab fa-linkedin" style="font-size: 24px; color: #8fb6ff;"></i>
+        </a>
+      </div>
+    </nav>
+  </footer>
+  <script src='./assets/hamburger.js'></script>
+  <script src='./assets/ease_in_contents.js'></script>
+</body>
+</html>
