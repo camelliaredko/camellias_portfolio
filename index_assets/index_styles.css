@@ -357,6 +357,10 @@ DESKTOP STYLES
     flex-grow: 0;
   }
 
+  .project-container {
+    justify-content: flex-start; /* Align all rows to the left */
+  }
+
   .project-item {
     flex-basis: 48%;
     flex-shrink: 0;

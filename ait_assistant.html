@@ -35,17 +35,17 @@
   <main>
  
     <div class="page-title-wrapper">
-      <h2 class="page-title">AIT Assistant: Designing Trustworthy AI for the Workplace</h2>
+      <h2 class="page-title">AIT Assistant: Exploring Fact-Checking, User Experience, and Usability in AI-Powered Search</h2>
     </div>
     <section id="intro-section" class="section-content maxwidth-container">
       <img class="intro-image" src="./assets/project_ait.png" alt="AIT Assistant prototype screenshot">
       <div id="intro-information" class="maxwidth-container">
         <div id="intro-boxes">
           <div class="intro-box">
-            <p>Duration: 6 months (Master’s Thesis)</p>
+            <p>Duration: 6 months (Master’s thesis)</p>
           </div>
           <div class="intro-box">
-            <p>My Roles: UX researcher, Interaction designer, Prompt engineer</p>
+            <p>My Roles: UX Researcher, UX Designer, Prompt Engineer</p>
           </div>
         </div>
         <div id="skills" class="maxwidth-container">
@@ -76,102 +76,128 @@
 
     <section class="intro-text-section">
       <p class="section-text">
-        My master's thesis focused on designing and evaluating <strong>AIT Assistant</strong>—an LLM-powered workplace chatbot that helps employees locate Quality Management documents while promoting fact-checking. I led the end-to-end research and design process, combining UX methods with LLM prompt engineering to create an interface that balanced <strong>efficiency, transparency, and trust</strong>.
+        For my HCI master’s thesis, I designed and evaluated <strong>AIT Assistant</strong>—an experimental, LLM-powered workplace chatbot that helps employees efficiently locate Quality Management documents while exploring <strong>novel interface mechanisms for encouraging fact-checking</strong> of AI-generated content. I designed the interface in Figma, engineered the prompt for the LLM, and conducted mixed-methods research to examine usability, user experience, and how design and context influence verification behavior. This project deepened my ability to design for <strong>responsible AI use</strong> and offered insights into how <strong>interface features, user expectations, and contextual constraints</strong> shape interactions with AI systems in professional settings.
       </p>
     </section>
 
     <section class="case-study-section">
       <div class="section-line"></div>
       <h2 class="section-title">PROBLEM</h2>
-      <h3 class="section-subtitle">Users often trust LLMs—but don’t verify</h3>
+      <h3 class="section-subtitle">Users often don’t verify LLM responses</h3>
       <p class="section-text">
-        Despite the risks of hallucinations, users rarely verify information provided by LLMs. Prior studies (e.g. Budiu et al., 2023) showed minimal fact-checking in commercial systems like ChatGPT. I aimed to investigate how <strong>interface and contextual factors</strong> influence trust, usability, and verification behavior in an LLM-powered workplace tool.
-      </p>
-    </section>
+        Large language models (LLMs) have become increasingly relevant in professional environments, where they are used to support tasks like document retrieval, summarization, and question answering [<a href="#references">1</a>, <a href="#references">2</a>]. Their appeal lies in their potential to <strong>increase productivity</strong> by providing information more quickly, easily, and intuitively [<a href="#references">3</a>, <a href="#references">4</a>, <a href="#references">5</a>].
+        <br><br>
+        Yet alongside these benefits, <strong>LLMs carry significant risks</strong>. Their outputs are prone to <strong>factual errors, inconsistencies, and hallucinations</strong> [<a href="#references">6</a>, <a href="#references">7</a>]. These <strong>issues often go unnoticed</strong> due to the models’ plausible-sounding responses, which can mislead users [<a href="#references">8</a>]. Furthermore, users may find it difficult to assess the reliability of AI-generated responses, as many current <strong>systems lack effective support for fact-checking</strong>, and citations—when present—are often missing, unclear, or entirely fabricated [<a href="#references">9</a>, <a href="#references">10</a>].
+      </p>      
+    </section>    
 
     <section class="case-study-section">
       <div class="section-line"></div>
       <h2 class="section-title">SOLUTION</h2>
-      <h3 class="section-subtitle">Designing a verification-friendly chatbot</h3>
+      <h3 class="section-subtitle">Design for critical engagement</h3>
       <p class="section-text">
-        I designed a prototype that foregrounded document transparency and encouraged verification using sections like "Passages Used to Generate Answer," "Reasoning and Assumptions," and a persistent "Warning Message." These were complemented by prompt-engineered AI responses structured for clarity and traceability.
+        To address these challenges, I designed <strong>AIT Assistant</strong>—an experimental, LLM-powered search interface that explored user interface and prompt strategies to support fact-checking in high-stakes environments. The goal was not only to retrieve documents efficiently, but to encourage users to critically engage with AI-generated responses through a combination of user interface features and structured output design.
+        <br><br>
+        I created a high-fidelity prototype in Figma and engineered a custom prompt for the LLM with dedicated sections like “Reasoning Behind Answer” and “Information to Fact-Check,” designed to make the model’s logic more transparent and traceable. The interface was designed to <strong>prominently display source documents and supporting passages</strong>, alongside system limitations communicated through elements such as <strong>warning messages</strong>.
+        <br><br>
+        The final version tested with users was implemented in Svelte by collaborating developers.
       </p>
     </section>
 
     <section class="case-study-section">
       <div class="section-line"></div>
       <h2 class="section-title">RESEARCH</h2>
-      <h3 class="section-subtitle">Mixed-methods study with real users</h3>
+      <h3 class="section-subtitle">A mixed-methods study with real users</h3>
       <p class="section-text">
-        I conducted a three-phase study with 16 employees at the Austrian Institute of Technology:
+        To understand how interface and contextual design influence fact-checking behavior, usability, and user experience, I conducted a mixed-methods study with 16 employees at the Austrian Institute of Technology. Participants interacted with AIT Assistant in realistic scenarios involving the retrieval of Quality Management documents.
+        <br><br>
+        The study was composed of four research components:
         <ul>
-          <li>Exploratory usability testing</li>
-          <li>Scenario-based fact-checking tasks</li>
-          <li>Post-task surveys and in-depth interviews</li>
-        </ul>
-        I applied the Critical Incident Technique, ISO 9241-11 usability metrics, and thematic coding to analyze behavioral patterns, interface pain points, and design implications.
+          <li><strong>Exploratory usability testing</strong> to identify early usability issues and observe initial user interactions with the prototype.</li>
+          <li><strong>Scenario-based usability testing</strong> to evaluate how users approached a realistic fact-checking task, focusing on how user interface elements influenced usability, user experience, and fact-checking behavior.</li>
+          <li><strong>Post-task survey</strong> to collect quantitative data on usability, user experience, and the perceived helpfulness of user interface elements in supporting fact-checking.</li>
+          <li><strong>Semi-structured interviews</strong> to gather deeper insights into users’ motivations to fact-check, perceived usefulness of specific features, situational factors, and overall emotional responses.</li>
+        </ul>        
+        <br>
+        I analyzed the data using a combination of the <strong>Critical Incident Technique</strong>, <strong>thematic analysis</strong> of interview transcripts, and <strong>statistical analysis</strong> of survey responses to identify patterns in user behavior, usability pain points, and design insights related to fact-checking.
       </p>
     </section>
-
+    
     <section class="case-study-section">
       <div class="section-line"></div>
       <h2 class="section-title">FINDINGS</h2>
-      <h3 class="section-subtitle">Trust and verification can coexist</h3>
+      <h3 class="section-subtitle">Uncovering insights through users’ eyes</h3>
       <p class="section-text">
-        Participants <strong>engaged in verification despite trusting the AI</strong>, especially when interface cues like document excerpts and relevance bars were salient. However, <strong>overly long AI responses</strong> and poor visual hierarchy <strong>reduced usability</strong> and discouraged engagement. Key findings:
+        AIT Assistant performed well overall in <strong>usability (average SUS score: 79.38)</strong> and <strong>user experience (average UEQ-S score: 1.33)</strong> evaluations, demonstrating that <strong>designs that promote critical engagement</strong> can still offer a high-quality, usable experience.
+        <br><br>
+        Key insights included:
         <ul>
-          <li>Trust was driven by ability, integrity, and transparency.</li>
-          <li>Verification was triggered by task importance, unclear answers, or design cues.</li>
-          <li>Warnings and side-by-side layouts improved user awareness and behavior.</li>
-        </ul>
-      </p>
-    </section>
-
-    <section class="case-study-section">
-      <div class="section-line"></div>
-      <h2 class="section-title">RESULT</h2>
-      <h3 class="section-subtitle">Design lessons for LLM-integrated tools</h3>
-      <p class="section-text">
-        The final prototype received strong usability scores (SUS = 79.38) and pragmatic UEQ-S scores. My work contributed design implications for future AI interfaces:
-        <ul>
-          <li>Communicating limitations can build trust—when well integrated</li>
-          <li>Fact-checking should be <strong>easy, intuitive, and encouraged by design</strong></li>
-          <li>Structured AI responses help reduce cognitive overload</li>
-        </ul>
+          <li><strong>Trust and verification aren’t mutually exclusive.</strong> Even when participants perceived the AI’s answers as trustworthy, many still engaged in fact-checking, especially when stakes felt high or ambiguity was present.</li> 
+          <li><strong>Well-placed user interface elements prompted deeper engagement.</strong> Elements like warning messages, relevance indicators, and clearly visible source excerpts helped participants recognize when closer scrutiny might be needed and lowered the effort required to follow through.</li>
+          <li><strong>Structured AI responses reduced cognitive load.</strong> Breaking answers into sections such as “Reasoning and Assumptions Behind Answer” and “Information to Fact-Check” made it easier for participants to understand the system’s reasoning and assess which parts to examine more critically.</li> 
+        </ul>        
       </p>
     </section>
 
     <section class="case-study-section">
       <div class="section-line"></div>
       <h2 class="section-title">REFLECTION</h2>
-      <h3 class="section-subtitle">Design is not just features—it’s context</h3>
+      <h3 class="section-subtitle">Learning to listen to data, people, and constraints</h3>
       <p class="section-text">
-        This project taught me that even well-intentioned features can fail if users don’t understand or notice them. I learned to consider <strong>placement, visual prominence, and clarity</strong> as central to usable transparency. Collaborating closely with developers also helped me iterate design decisions based on <strong>LLM limitations and response latency</strong>, deepening my cross-functional skills.
+        Working on AIT Assistant helped me grow in ways I didn’t expect by teaching me how much <strong>context, constraints, and human nuance</strong> shape whether a design actually works the way you hope it will.
+        <br><br>
+        One of the most challenging (yet valuable) parts of the process was making sense of different types of data. Interviews, surveys, and usability tests each revealed something slightly different about how people interacted with the tool, and sometimes those signals didn’t seem to align. I learned not to chase a single “truth,” but to <strong>look for the bigger patterns and tensions</strong> that helped me understand the full picture. That experience sharpened my judgment and made me a more careful, balanced researcher.
+        <br><br>
+        I also came to <strong>appreciate the practical side of working with real people</strong> in real workplaces. Scheduling and running sessions required a lot of flexibility—people had competing responsibilities, last-minute changes, and limited time. It reminded me how important it is to design research that respects those realities. Piloting the sessions and adjusting the scope made a big difference, and it’s something I’ll carry into future work.
+        <br><br>
+        Collaborating with the development team also pushed me to <strong>think more carefully about what’s feasible</strong>. Some features had to be simplified or left out entirely due to time or technical constraints. That forced me to focus on priorities, like understanding what really supports users, what’s essential for transparency, and what can be adjusted without compromising the experience.
+        <br><br>
+        Overall, this project deepened my understanding of what it takes to create <strong>responsible, user-centered AI tools</strong>. Not just designing features, but shaping the experience around how people actually work, think, and make decisions.
       </p>
     </section>
+    
+    
 
     <section class="case-study-section">
       <div class="section-line"></div>
       <h2 class="section-title">WANT THE FULL STORY?</h2>
       <p class="section-text">
-        You can read my full thesis <a href="YOUR_THESIS_LINK_HERE" class="hotpink underline">here</a> and view the Figma prototype <a href="YOUR_FIGMA_LINK_HERE" class="hotpink underline">here</a>.
+        You can read my full thesis <a href="THESIS_LINK_HERE" target="_blank" class="hotpink underline">here</a>.
       </p>
     </section>
+
+    <section id="references" class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">REFERENCES</h2>
+      <ol>
+        <li><span>[1]</span> Longyue Wang, Chenyang Lyu, Tianbo Ji, Zhirui Zhang, Dian Yu, Shuming Shi, and Zhaopeng Tu. 2023. <em>Document-Level Machine Translation with Large Language Models.</em> arXiv:2304.02210 [cs]. (Oct. 2023).</li>
+        <li><span>[2]</span> Yang Zhang, Hanlei Jin, Dan Meng, Jun Wang, and Jinghua Tan. 2024. <em>A Comprehensive Survey on Process-Oriented Automatic Text Summarization with Exploration of LLM-Based Methods.</em> Version Number: 2. (2024).</li>
+        <li><span>[3]</span> Petter Bae Brandtzaeg and Asbjørn Følstad. 2017. <em>Why People Use Chatbots.</em> In <em>Internet Science. INSCI 2017 (Lecture Notes in Computer Science).</em> Ioannis Kompatsiaris et al., editors. Vol. 10673. Springer, Cham, (Nov. 2017), 377–392.</li>
+        <li><span>[4]</span> Andreas Lommatzsch and Jonas Katins. 2019. <em>An Information Retrieval-based Approach for Building Intuitive Chatbots for Large Knowledge Bases.</em> In <em>Proceedings of the LWDA conference 2019.</em> Berlin, Germany. CEUR Workshop Proceedings, 343–352. https://ceur-ws.org/Vol-2454/paper_60.pdf
+        <li><span>[5]</span> Ranci Ren, John W. Castro, Silvia T. Acuña, and Juan De Lara. 2019. <em>Usability of Chatbots: A Systematic Mapping Study.</em> (July 2019), 479–484.</li>
+        <li><span>[6]</span> Gabrijela Perković, Antun Drobnjak, and Ivica Botički. 2024. <em>Hallucinations in LLMs: Understanding and Addressing Challenges.</em> In <em>2024 47th MIPRO ICT and Electronics Convention (MIPRO).</em> IEEE, Opatija, Croatia, (May 2024), 2084–2088.</li>
+        <li><span>[7]</span> Anna Strasser. 2023. <em>On pitfalls (and advantages) of sophisticated large language models.</em> arXiv:2303.17511 [cs]. (Feb. 2023).</li>
+        <li><span>[8]</span> Catherine L. Clelland, Stuart Moss, and James D. Clelland. 2024. <em>Warning: Artificial intelligence chatbots can generate inaccurate medical and scientific information and references.</em> <em>Exploration of Digital Health Technologies</em>, 2(1), (Jan. 2024), 1–6.</li>
+        <li><span>[9]</span> Nelson F. Liu, Tianyi Zhang, and Percy Liang. 2023. <em>Evaluating Verifiability in Generative Search Engines.</em> arXiv:2304.09848 [cs]. (Oct. 2023). Retrieved June 4, 2024 from http://arxiv.org/abs/2304.09848
+        <li><span>[10]</span> Pranav Narayanan Venkit, Philippe Laban, Yilun Zhou, Yixin Mao, and Chien-Sheng Wu. 2024. <em>Search Engines in an AI Era: The False Promise of Factual and Verifiable Source-Cited Responses.</em> Version Number: 1. (2024).</li>
+      </ol>      
+    </section>
+
       <section id="more-projects" class="case-study-section">
         <div class="section-line"></div>
         <h2 class="section-title">MORE PROJECTS</h2>
         <div class="more-projects-image-container transition">
           <div class="more-projects-image-wrapper">
-            <a href="./emi.html"><img class="more-projects-section-image project-pink" src="./assets/project_1.png" alt="Emi"></a>
-            <a href="./emi.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">Emi</h3></a>
+            <a href="./1_2_oder_3_for_menstruation_education.html"><img class="more-projects-section-image project-blue" src="./assets/project_2.png" alt="1, 2 oder 3 for Menstruation Education"></a>
+            <a href="./1_2_oder_3_for_menstruation_education.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">1, 2 oder 3 for Menstruation Education</h3></a>
           </div>
           <div class="more-projects-image-wrapper">
             <a href="./mistoe.html"><img class="more-projects-section-image project-blue" src="./assets/project_3.png" alt="MisToe"></a>
             <a href="./mistoe.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">MisToe</h3></a>
           </div>
           <div class="more-projects-image-wrapper">
-            <a href="./collabart.html"><img class="more-projects-section-image project-periwinkle" src="./assets/project_4.png" alt="CollabArt"></a>
-            <a href="./collabart.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">CollabArt</h3></a>
+            <a href="./shared_achievements.html"><img class="more-projects-section-image project-periwinkle" src="./assets/project_4.png" alt="Shared Achievements"></a>
+            <a href="./shared_achievements.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">Shared Achievements</h3></a>
           </div>
         </div>
       </section>
