@@ -87,7 +87,7 @@
 
     <section id="intro-description" class="intro-text-section">
       <p class="section-text">
-        As part of my Advanced Contextual Interfaces course in the fall and winter of 2023/2024, I independently designed, developed, and evaluated a translation assistant bot named "Lexi" that provided corrective feedback to German learners during real-time conversations in a Discord server. Lexi acted as a technology probe—a simple, functional prototype intended to spark reflection and uncover design opportunities. Over the course of a week, participants chatted in a shared space and privately shared their thoughts in response to diary prompts I provided. Thematic analysis of these reflections gave me valuable insight into how Lexi was helpful and when it felt too intrusive. After the course ended, I continued to develop Lexi further, expanding its capabilities well beyond the original prototype.
+        As part of my Advanced Contextual Interfaces course in the fall and winter of 2023/2024, I independently designed, developed, and evaluated a translation assistant bot named "Lexi" that provided corrective feedback to German learners during real-time conversations in a Discord server. Lexi acted as a technology probe—a simple, functional prototype intended to spark reflection and uncover design opportunities. Over the course of a week, participants chatted in a shared space and privately shared their thoughts in response to diary prompts I provided. Thematic analysis of these reflections gave me valuable insight into how Lexi was helpful and when it felt too intrusive. Based on these insights, I proposed both context-aware adaptations and non-context-aware refinements to enhance the user experience of the bot. After the course ended, I continued to develop Lexi further, expanding its capabilities well beyond the original prototype.
       </p>
     </section>    
 
@@ -111,7 +111,7 @@
         </p>
       </div>
       <p class="section-text" style="margin-top: 1.5em;">
-        I developed a translation assistant bot named Lexi to explore how real-time corrective feedback influences language learning in live group conversations. Lexi is hosted on Google Cloud and runs within a shared Discord server. It uses the Google Translate API to detect whether a message is written in German or English. If a message is in German, it provides an English translation to help users verify their understanding and facilitate communication between each other, especially if they only know English, not German, well. It then returns a grammatically correct version of the original message, marking mistakes and oftentimes offering a more natural alternative. English messages are also translated into German, helping learners meaningfully acquire German by seeing how their own thoughts are expressed in the language.
+        I developed a translation assistant bot named Lexi to explore how real-time corrective feedback influences language learning in live group conversation. Lexi is hosted on Google Cloud and supports learners directly within a shared Discord server, detecting whether a message is written in German or English using the Google Translate API. If a message is in German, it provides an English translation to help users verify their understanding and facilitate communication between each other, especially if they only know English, not German, well. It then returns a grammatically correct version of the original message, marking mistakes and possibly offering a more natural alternative. English messages are also translated into German, helping learners pick up new language through expressions that are personally meaningful to them.
       </p>
       <p class="section-text" style="margin-top: 1.5em;">
         While the version of Lexi shown above was used in the original study, I continued to refine and expand it after the course ended by adding new features and more advanced technologies. These enhancements are discussed later in the <a href="#post-study-enhancements" class="hotpink underline">Post-Study Enhancements</a> section.
@@ -144,21 +144,61 @@
       </p>
     
       <p class="section-text" style="margin-top: 1.5em;">
-        Many learners described Lexi as helpful and confidence-boosting. They appreciated receiving immediate feedback, especially for grammar and word choice. Some mentioned that seeing their mistakes corrected helped them better understand sentence structure and notice patterns in their writing. Lexi’s ability to handle messages that mixed German and English also made it easier for learners to participate without fear of making mistakes. Others mentioned that it removed the need to switch to external translators, making the learning process feel smoother. A few even reported feeling more motivated to write and speak German regularly outside of using the bot, noting improved comfort and reduced anxiety when using the language.
+        Many learners described Lexi as helpful and confidence-boosting. They appreciated receiving immediate feedback, especially for grammar and word choice. Some mentioned that seeing their mistakes corrected helped them better understand sentence structure and notice patterns in their writing. Lexi’s ability to handle messages that mixed German and English made it easier for learners to participate without fear of making mistakes. Others mentioned that it removed the need to switch to external tools like translators, streamlining the learning process. A few even reported feeling more motivated to write and speak German regularly outside of using the bot, noting improved comfort and reduced anxiety when using the language.
       </p>
     
       <p class="section-text" style="margin-top: 1.5em;">
-        Despite these benefits, several participants found Lexi intrusive at times, particularly when many people were chatting at once—some wished for the ability to temporarily hide feedback or choose when to see it. Additionally, a few participants wanted brief explanations to better understand Lexi's grammar corrections. Although I did not implement a full redesign during the course, this feedback quietly informed how I refined Lexi afterward; in response to user feedback, I removed usernames from correction messages to reduce visual clutter, and I introduced an AI-powered explanation feature to improve support for language learning.
+        Despite these benefits, several participants found Lexi intrusive at times, particularly when many people were chatting at once. Some wished they could turn off or hide its feedback temporarily, or at least choose when to see it. Others wished for brief explanations behind Lexi’s corrections. These insights pointed to a need for <strong>context-aware adaptations</strong> that could preserve the benefits of real-time feedback while giving users more control and reducing disruptions. This became the basis for my redesign.
       </p>
     </section>
     
+    
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">DESIGN MODIFICATIONS</h2>
+      <h3 class="section-subtitle">Designing adaptive feedback that respects the flow of conversation</h3>
+    
+      <p class="section-text">
+        Based on user feedback, I designed two types of modifications: general interface refinements and context-aware behaviors that adapt based on conversation activity levels. As I developed these changes, I was mindful of both ethical and technical constraints. I chose not to design a fully personalized system, as that may have required ethically questionable data collection and user tracking. Instead, I focused on adaptations that respected user privacy, aligned with Discord’s technical constraints, and still responded meaningfully to social and conversational contexts.
+      </p>
+    
+      <h4 class="section-subheading" style="margin-top: 1.5em; font-size: 1.15em;">General Improvements</h4>
+      <div class="section-image-container">
+        <img class="section-image rounded-border" src="./translation_bot_assets/minimalistic_bot_demonstration.png" alt="Lexi shows a cleaner, simpler correction message" style="max-width: 100%;">
+        <p class="image-label" style="text-align: center; margin-top: 0.1em;">
+          Lexi hides translations by default and removes usernames from corrections to reduce visual clutter and support focused learning.
+        </p>
+      </div>
+      <ul class="interaction-list" style="margin-top: 1.5em;">
+        <li><strong>Click-to-reveal translations:</strong> English translations are hidden by default using Discord’s <code>||text||</code> formatting, which conceals the text until the user clicks to reveal it. This feature was requested by participants, and it reduces visual clutter and supports learners who prefer to quiz themselves on meaning before checking.</li>
+        <li><strong>Streamlined feedback layout:</strong> Lexi no longer displays usernames in its correction messages as this added little value and removing them made corrections less visually overwhelming.</li>
+      </ul>
+    
+      <h4 class="section-subheading" style="margin-top: 2.0em; font-size: 1.15em;">Context-Aware Adaptations</h4>
+      <div class="section-image-container">
+        <img class="section-image rounded-border" src="./translation_bot_assets/adaptive_bot_demonstration.png" alt="Lexi adapts to conversation flow" style="max-width: 100%;">
+        <p class="image-label" style="text-align: center; margin-top: 0.1em;">
+          Lexi adapts to the flow of conversation by providing explanations of corrections in response to ❓ reactions and suggesting pauses during high activity.
+        </p>
+      </div>
+
+      <ul class="interaction-list" style="margin-top: 1.5em;">
+        <li><strong>Adaptive explanation lengths:</strong> When a user reacts to a correction with the ❓ emoji, Lexi uses GPT-4 to generate an explanation of corrections. If conversation activity is high, the explanation defaults to a shorter version. Users can request longer versions of explanations, and Lexi remembers this preference over time.</li>
+        <li><strong>Disruption-aware reminders:</strong> When the message volume passes an overload threshold, Lexi occasionally and discreetly reminds users that they can temporarily pause it using the "<code>/pause</code>" command.</li>
+      </ul>
+      <p class="section-text" style="margin-top: 1em;">
+        Many of the context-aware features described above were conceptual redesigns based on study findings. However, only a few—such as the removal of usernames and on-demand explanations of mistakes powered by large language models—were implemented afterwards during my spare time.
+      </p>
+    </section>
+
     <section id="post-study-enhancements" class="case-study-section">
       <div class="section-line"></div>
       <h2 class="section-title">POST-STUDY ENHANCEMENTS</h2>
-      <h3 class="section-subtitle">Lexi becoming a daily language buddy</h3>
+      <h3 class="section-subtitle">Lexi became my daily language buddy</h3>
 
       <p class="section-text">
-        After the user study, I kept refining Lexi during my spare time to support my own daily language practice, and I found myself naturally building on the insights from earlier participants. These updates also came from further personal use: chatting in different languages, making mistakes, and noticing what would help me improve. Over time, Lexi became an essential part of my learning journey and one of the ways my friends and I stay close, share joy, and grow together across languages.
+        After the initial user study and context-aware redesign, I kept refining Lexi in my spare time to support my own daily language practice. These updates came from personal use: chatting in different languages, making mistakes, and noticing what would help me improve. Over time, Lexi became an essential part of my learning journey and one of the ways my friends and I stay close, share joy, and grow together across languages.
       </p>
 
       <p class="section-text" style="margin-top: 1.5em;">
@@ -166,15 +206,17 @@
       </p>
 
       <ul class="interaction-list">
-        <li><strong>Multilingual Feedback:</strong> Lexi supports all languages covered by Google Translate and GPT-4o, and adds furigana for Japanese and pinyin for Chinese to aid reading and pronunciation.</li>
+        <li><strong>Multilingual Feedback:</strong> Lexi supports all languages recognized by Google Translate and GPT-4o, and adds furigana for Japanese and pinyin for Chinese to aid reading and pronunciation.</li>
         <li><strong>Large Language Model Integration:</strong> Lexi uses GPT-4o to provide accurate corrections, natural translations, and complementary human-AI interactions that support and enrich language exchange between people.</li>
         <li><strong>On-Demand Explanations:</strong> Typing and sending “e” triggers the generation of a detailed explanation of the corrections made to the user’s most recent message, which is automatically posted in a private feedback channel to prevent clutter.</li>
         <li><strong>Flashcard Export:</strong> Corrections can be saved as CSV files and imported into tools like Anki—ideal for spaced repetition and long-term learning.</li>
       </ul>
 
-
+      
+      <!-- Paired images: English + Spanish side by side -->
       <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2em; margin: 2em auto; max-width: 1100px;">
 
+        <!-- English message translation -->
         <div style="flex: 1 1 480px;">
           <img class="section-image rounded-border" src="./translation_bot_assets/updated_lexi_english.png" alt="Lexi translates into German, Italian, and Japanese" style="width: 100%;">
           <p class="image-label" style="text-align: center; margin-top: 0.1em;">
@@ -182,6 +224,7 @@
           </p>
         </div>
 
+        <!-- Spanish punctuation correction -->
         <div style="flex: 1 1 480px;">
           <img class="section-image rounded-border" src="./translation_bot_assets/updated_lexi_spanish.png" alt="Lexi corrects Spanish punctuation" style="width: 73.5%;">
           <p class="image-label" style="text-align: center; margin-top: 0.1em;">
@@ -190,12 +233,19 @@
         </div>
       </div>
 
+      <!-- German grammar explanation: full-width -->
       <div class="section-image-container" style="max-width: 700px; margin: 3em auto 1em;">
         <img class="section-image rounded-border" src="./translation_bot_assets/updated_lexi_explanation.png" alt="Lexi explains a German article correction" style="width: 100%;">
         <p class="image-label" style="text-align: center; margin-top: 0.1em;">
           Upon user request, Lexi sends an AI-generated explanation of a German mistake to a private channel.
         </p>
       </div>
+
+
+
+
+
+
     </section>
 
     <section class="case-study-section">
@@ -203,18 +253,23 @@
       <h2 class="section-title">REFLECTIONS & LESSONS LEARNED</h2>
       <h3 class="section-subtitle">Lessons from independent research, design, and development</h3>
       <p class="section-text">
-        This project gave me the opportunity to carry out a UX research and design process from start to finish entirely on my own—from building Lexi and structuring the study to analyzing data and imagining how the system might evolve. It strengthened my ability to work independently while staying grounded in user insight. 
+        This project gave me the opportunity to carry out a UX research and design process from start to finish entirely on my own—from building Lexi and structuring the study to analyzing data and proposing design refinements. It strengthened my ability to work independently while staying grounded in user insight, ethical thinking, and technical constraints. 
+        <br><br>
+        Designing for adaptivity pushed me to think more carefully about timing, user agency, and emotional experience. It also challenged me to find creative ways of making the system feel responsive without relying on complex tracking. I learned to question what kinds of data are truly necessary to improve the experience and when simplicity and respect for boundaries should take priority.
         <br><br>
         <strong>Key takeaways from the process:</strong>
         <br><br>
-        <strong>1. Opportunities for improvement often hide in soft but consistent feedback.</strong><br>
-        Small, repeated comments regarding chat clutter and unclear corrections did not seem urgent, but they signaled a deeper need. Addressing them led to simple yet meaningful improvements, like removing usernames and adding on-demand explanations. This encouraged me to pay closer attention to such small, recurring bits of feedback, even if they may not stand out right away.
+        <strong>1. Designing context-aware systems starts with careful listening.</strong><br>
+        Instead of guessing what kind of context the system should respond to, I let participants’ reflections reveal what kinds of friction or needs emerged from real-world use. This shaped my understanding of what adaptations would actually matter. In future projects, I plan to continue listening closely to real users and letting their experiences shape my designs.
         <br><br>
-        <strong>2. Longitudinal feedback reveals telling insights that can be missed with short-term testing.</strong><br>
-        Reviewing diary entries over time revealed how users’ expectations and experiences with Lexi evolved. Some issues—like chat clutter—only became evident as group activity increased and corrections began to disrupt the conversation flow. Observing Lexi in such varied, real-world contexts helped me notice patterns that likely would have been missed in a one-off survey. This reminded me of the value of adapting designs as user needs and contexts shift.
-        <br><br>    
-        <strong>3. Ambiguity is part of the process and worth embracing.</strong><br> 
-        Working solo on this project meant leaning into uncertainty more than I was used to when making decisions. This taught me to become more comfortable with ambiguity, trust my judgment, and keep moving even when the path was not always clear.
+        <strong>2. Longitudinal feedback can reveal deep design insights.</strong><br>
+        Reviewing diary entries over time gave me insight into how participants’ emotions and expectations evolved. This longitudinal approach helped me move beyond surface-level feedback and notice recurring tensions that informed meaningful design decisions. Such an approach helped me identify design opportunities that would have been easy to miss in a one-off survey or interview.
+        <br><br>
+        <strong>3. Constraints can sharpen priorities.</strong><br>
+        Working within privacy and resource limitations helped me focus on changes that were both feasible and meaningful to users. Instead of aiming for a fully personalized system, I looked for ways to improve the experience without asking for more data than necessary. This reinforced the idea that thoughtful, well-scoped adaptations can often go further than complex ones—and that constraints can clarify what’s worth building.
+        <br><br>        
+        <strong>4. Ambiguity is part of the process and worth embracing.</strong><br> 
+        Making decisions on my own meant leaning into uncertainty more than I was used to. This taught me to become more comfortable with ambiguity, trust my judgment, and keep moving even when the path was not always clear.
       </p>
     </section>  
 
@@ -289,3 +344,4 @@
 <script src='./assets/ease_in_contents.js'></script>
 </body>
 </html>
+
