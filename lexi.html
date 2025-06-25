@@ -34,7 +34,7 @@
   </header>
   <main>
     <div class="page-title-wrapper">
-      <h2 class="page-title">Lexi: A Context-Aware Bot for Supporting Language Learning</h2>
+      <h2 class="page-title">Lexi: An AI-Powered Assistant for Real-Time Language Learning Feedback</h2>
     </div>
 
     <section id="intro-section" class="section-content maxwidth-container">
@@ -87,7 +87,7 @@
 
     <section id="intro-description" class="intro-text-section">
       <p class="section-text">
-        As part of my Advanced Contextual Interfaces course in the fall and winter of 2023/2024, I independently designed, developed, and evaluated a translation assistant bot named "Lexi" that provided corrective feedback to German learners during real-time conversations in a Discord server. Lexi acted as a technology probe—a simple, functional prototype intended to spark reflection and uncover design opportunities. Over the course of a week, participants chatted in a shared space and privately shared their thoughts in response to diary prompts I provided. Thematic analysis of these reflections gave me valuable insight into how Lexi was helpful and when it felt too intrusive. After the course ended, I continued to develop Lexi further, expanding its capabilities well beyond the original prototype.
+        As part of my Advanced Contextual Interfaces course in the fall and winter of 2023/2024, I independently designed, developed, and evaluated a translation assistant bot named "Lexi" that provided corrective feedback to German learners during real-time conversations in a Discord server. Lexi acted as a technology probe—a simple, functional prototype intended to spark reflection and uncover design opportunities. Over the course of a week, participants chatted in a shared space and privately shared their thoughts in response to diary prompts I provided. Thematic analysis of these reflections gave me valuable insight into how Lexi was helpful and when it felt too intrusive. After the course ended, I continued to develop Lexi further. Originally created as a lightweight prototype for a user study, it evolved into a fully AI-integrated learning assistant with GPT-4o, expanding well beyond the original concept.
       </p>
     </section>    
 
@@ -111,10 +111,10 @@
         </p>
       </div>
       <p class="section-text" style="margin-top: 1.5em;">
-        I developed a translation assistant bot named Lexi to explore how real-time corrective feedback influences language learning in live group conversations. Lexi is hosted on Google Cloud and runs within a shared Discord server. It uses the Google Translate API to detect whether a message is written in German or English. If a message is in German, it provides an English translation to help users verify their understanding and facilitate communication between each other, especially if they only know English, not German, well. It then returns a grammatically correct version of the original message, marking mistakes and oftentimes offering a more natural alternative. English messages are also translated into German, helping learners meaningfully acquire German by seeing how their own thoughts are expressed in the language.
+        I developed a translation assistant bot named Lexi to explore how <strong>real-time corrective feedback</strong> influences language learning in live group conversations. Lexi is hosted on Google Cloud and runs within a shared Discord server. It uses the Google Translate API to detect whether a message is written in German or English. If a message is in German, it provides an English translation to help users verify their understanding and facilitate communication between each other, especially if they only know English, not German, well. It then returns a grammatically correct version of the original message, marking mistakes and oftentimes offering a more natural alternative. English messages are also translated into German, helping learners meaningfully acquire German by seeing how their own thoughts are expressed in the language.
       </p>
       <p class="section-text" style="margin-top: 1.5em;">
-        While the version of Lexi shown above was used in the original study, I continued to refine and expand it after the course ended by adding new features and more advanced technologies. These enhancements are discussed later in the <a href="#post-study-enhancements" class="hotpink underline">Post-Study Enhancements</a> section.
+        While the version of Lexi shown above was used in the original study, I continued to <strong>refine and expand</strong> it after the course ended by <strong>adding new features</strong> and <strong>more advanced technologies</strong>. These enhancements are discussed later in the <a href="#post-study-enhancements" class="hotpink underline">Post-Study Enhancements</a> section.
      </p>
     </section>
 
@@ -142,11 +142,9 @@
       <p class="section-text" style="margin-top: 1.5em;">
         I conducted a <strong>thematic analysis</strong> of the diary entries, organizing reflections into a spreadsheet and later mapping them into an <strong>affinity diagram</strong> using Miro. This process helped surface recurring tensions, desires, and emotional reactions. Six out of nine participants submitted diary entries on multiple days, offering a valuable longitudinal view into how their perceptions evolved over time.
       </p>
-    
       <p class="section-text" style="margin-top: 1.5em;">
-        Many learners described Lexi as helpful and confidence-boosting. They appreciated receiving immediate feedback, especially for grammar and word choice. Some mentioned that seeing their mistakes corrected helped them better understand sentence structure and notice patterns in their writing. Lexi’s ability to handle messages that mixed German and English also made it easier for learners to participate without fear of making mistakes. Others mentioned that it removed the need to switch to external translators, making the learning process feel smoother. A few even reported feeling more motivated to write and speak German regularly outside of using the bot, noting improved comfort and reduced anxiety when using the language.
+        Many learners described Lexi as helpful and confidence-boosting. They appreciated receiving immediate feedback, especially for grammar and word choice. Some mentioned that seeing their mistakes corrected helped them better understand sentence structure and notice patterns in their writing. Lexi’s ability to handle messages that mixed German and English also made it easier for learners to participate without fear of making mistakes. Others mentioned that it removed the need to switch to external translators, making the learning process feel smoother. A few even reported feeling more motivated to write and speak German regularly outside of using the bot, noting improved comfort and reduced anxiety when using the language. Several participants shared that Lexi created a safer space to experiment with the language—especially compared to practicing with native speakers, where fear of judgment or embarrassment might otherwise hold them back.
       </p>
-    
       <p class="section-text" style="margin-top: 1.5em;">
         Despite these benefits, several participants found Lexi intrusive at times, particularly when many people were chatting at once—some wished for the ability to temporarily hide feedback or choose when to see it. Additionally, a few participants wanted brief explanations to better understand Lexi's grammar corrections. Although I did not implement a full redesign during the course, this feedback quietly informed how I refined Lexi afterward; in response to user feedback, I removed usernames from correction messages to reduce visual clutter, and I introduced an AI-powered explanation feature to improve support for language learning.
       </p>
@@ -156,32 +154,26 @@
       <div class="section-line"></div>
       <h2 class="section-title">POST-STUDY ENHANCEMENTS</h2>
       <h3 class="section-subtitle">Lexi becoming a daily language buddy</h3>
-
       <p class="section-text">
-        After the user study, I kept refining Lexi during my spare time to support my own daily language practice, and I found myself naturally building on the insights from earlier participants. These updates also came from further personal use: chatting in different languages, making mistakes, and noticing what would help me improve. Over time, Lexi became an essential part of my learning journey and one of the ways my friends and I stay close, share joy, and grow together across languages.
+        After the user study, I continued refining Lexi in my spare time—not just as a designer and developer, but also as a language learner. It quickly became my favorite way to practice writing in foreign languages: <strong>convenient</strong>, <strong>educational</strong>, and <strong>integrated into meaningful conversations</strong> with friends. I found myself naturally building on the insights from earlier participants while also addressing new needs that emerged through both personal use and shared interactions. Over time, Lexi became an essential part of my learning routine and one of the ways my friends and I stay close, share joy, and grow together across languages. 
       </p>
 
       <p class="section-text" style="margin-top: 1.5em;">
         Key enhancements include:
       </p>
-
       <ul class="interaction-list">
         <li><strong>Multilingual Feedback:</strong> Lexi supports all languages covered by Google Translate and GPT-4o, and adds furigana for Japanese and pinyin for Chinese to aid reading and pronunciation.</li>
         <li><strong>Large Language Model Integration:</strong> Lexi uses GPT-4o to provide accurate corrections, natural translations, and complementary human-AI interactions that support and enrich language exchange between people.</li>
         <li><strong>On-Demand Explanations:</strong> Typing and sending “e” triggers the generation of a detailed explanation of the corrections made to the user’s most recent message, which is automatically posted in a private feedback channel to prevent clutter.</li>
         <li><strong>Flashcard Export:</strong> Corrections can be saved as CSV files and imported into tools like Anki—ideal for spaced repetition and long-term learning.</li>
       </ul>
-
-
       <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2em; margin: 2em auto; max-width: 1100px;">
-
         <div style="flex: 1 1 480px;">
           <img class="section-image rounded-border" src="./translation_bot_assets/updated_lexi_english.png" alt="Lexi translates into German, Italian, and Japanese" style="width: 100%;">
           <p class="image-label" style="text-align: center; margin-top: 0.1em;">
             Lexi translates an English message into German, Italian, and Japanese, demonstrating its multilingual capabilities.
           </p>
         </div>
-
         <div style="flex: 1 1 480px;">
           <img class="section-image rounded-border" src="./translation_bot_assets/updated_lexi_spanish.png" alt="Lexi corrects Spanish punctuation" style="width: 73.5%;">
           <p class="image-label" style="text-align: center; margin-top: 0.1em;">
@@ -189,7 +181,6 @@
           </p>
         </div>
       </div>
-
       <div class="section-image-container" style="max-width: 700px; margin: 3em auto 1em;">
         <img class="section-image rounded-border" src="./translation_bot_assets/updated_lexi_explanation.png" alt="Lexi explains a German article correction" style="width: 100%;">
         <p class="image-label" style="text-align: center; margin-top: 0.1em;">
@@ -203,7 +194,7 @@
       <h2 class="section-title">REFLECTIONS & LESSONS LEARNED</h2>
       <h3 class="section-subtitle">Lessons from independent research, design, and development</h3>
       <p class="section-text">
-        This project gave me the opportunity to carry out a UX research and design process from start to finish entirely on my own—from building Lexi and structuring the study to analyzing data and imagining how the system might evolve. It strengthened my ability to work independently while staying grounded in user insight. 
+        This project gave me the opportunity to carry out a UX research and design process from start to finish entirely on my own—from building Lexi and structuring the study to analyzing data and imagining how the system might evolve. It strengthened my ability to <strong>work independently</strong> while <strong>staying grounded in user insight</strong>. 
         <br><br>
         <strong>Key takeaways from the process:</strong>
         <br><br>
@@ -241,6 +232,7 @@
           <li>[6] Hilary Hutchinson, Wendy Mackay, Bo Westerlund, Benjamin B. Bederson, Allison Druin, Catherine Plaisant, Michel Beaudouin-Lafon, Stéphane Conversy, Helen Evans, Heiko Hansen, Nicolas Roussel, and Björn Eiderbäck. 2003. Technology probes. In <em>CHI 2003: New Horizons—Proceedings of the Conference on Human Factors in Computing Systems</em>, 5(1). ACM Press, New York, NY, 17–24. DOI: https://doi.org/10.1145/642611.642616.</li>
         </ol>        
     </section>
+
     <section id="more-projects" class="case-study-section">
       <div class="section-line"></div>
       <h2 class="section-title">MORE PROJECTS</h2>
@@ -259,9 +251,11 @@
         </div>
       </div>
     </section>
+
     <div class="case-study-section">
       <div class="section-line"></div>
     </div>
+    
     <section id="contact-section">
       <div class="contact-box transition">
         <img class="letter-image" src="./assets/letter.png" alt="Letter">
@@ -271,6 +265,7 @@
         </div>
       </div>
     </section>
+
 </main>
 <footer>
   <span class="blue" style="padding-top: 10px;">&copy; Camellia Redko.</span>
