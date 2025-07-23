@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camellia's Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Fraunces&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="stylesheet" href="./project_assets/project_styles.css">
+</head>
+
+<body class='ait-assistant-body'>
+  <header id="topbar">
+    <h1 id="nameplate"><a href="./index.html">Camellia Redko</a></h1>
+    <nav id="navbar" class="menu-closed">
+      <button id='hamburger'>
+        <div class='line-burger'></div>
+        <div class='line-burger'></div>
+        <div class='line-burger'></div>
+      </button>
+      <ul>
+        <li><a href="./index.html#projects-section">Projects</a></li>
+        <li><a href="./index.html#skills-section">Skills</a></li>
+        <li><a href="./index.html#about-section">About</a></li>
+        <li><a href="https://docs.google.com/document/d/1m1tTbKRhQIwwWCsMOK6MDjgxs0tzg-jKlHGJ7yK0LU0/edit?usp=sharing"
+            target="_blank">Résumé</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+ 
+    <div class="page-title-wrapper">
+      <h2 class="page-title">AI-Powered Search: Designing for Fact-Checking, User Experience, and Usability</h2>
+    </div>
+    <section id="intro-section" class="section-content maxwidth-container">
+      <img class="intro-image" src="./assets/project_6.png" alt="Project thumbnail">
+      <div id="intro-information" class="maxwidth-container">
+        <div id="intro-boxes">
+          <div class="intro-box">
+            <p>Duration: 6 months (Master’s thesis)</p>
+          </div>
+          <div class="intro-box">
+            <p>My Roles: UX Researcher, UX Designer, Prompt Engineer</p>
+          </div>
+        </div>
+        <div id="skills" class="maxwidth-container">
+          <div id="methods" class="skill-type transition">
+            <img id="methods-icon" class="skills-icons" src="./assets/methods_icon.PNG" alt="Icon representing methods">
+            <div class="skills-boxes-pink">
+              <span>Human-AI Interaction</span>
+              <span>Responsible AI</span>
+              <span>LLM Prompt Design</span>
+              <span>Mixed-Methods Research</span>
+              <span>Observation</span>
+              <span>Survey</span>
+              <span>Semi-Structured Interview</span>
+              <span>Thematic Analysis</span>
+              <span>Critical Incident Technique</span>
+            </div>
+          </div>
+          <div id="tools" class="skill-type transition">
+            <img id="tools-icon" class="skills-icons" src="./assets/tools_icon.PNG" alt="Icon representing tools">
+            <div class="skills-boxes-blue">
+              <span>Figma</span>
+              <span>Excel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-text-section">
+      <p class="section-text">
+        For my HCI master’s thesis, I designed and evaluated an LLM-powered workplace search interface that helps employees efficiently find documents while <strong>supporting critical engagement with AI-generated content</strong>. I designed the interface in Figma, engineered the prompt for the LLM, and conducted a mixed-methods study to <strong>assess usability, user experience, and verification behavior</strong>. This project deepened my ability to design for <strong>responsible AI use</strong> and offered insights into how interface features, user expectations, and contextual constraints shape interactions with AI systems in professional settings.
+      </p>
+      <p style="font-style: italic; font-size: 0.9em; margin-top: 1em;">
+        Note: Some project details have been generalized or omitted to respect confidentiality agreements.
+      </p>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">PROBLEM</h2>
+      <h3 class="section-subtitle">Users often don’t verify LLM responses</h3>
+      <div class="section-image-container">
+        <img class="section-image" src="./ai_search_assets/problem.png" alt="Illustration of a user struggling with AI" style="width: 50%">
+      </div>
+      <p class="section-text">
+        Large language models (LLMs) have become increasingly relevant in professional environments, where they are used to support tasks like document retrieval, summarization, and question answering [<a href="#references">1</a>, <a href="#references">2</a>]. Their appeal lies in their potential to <strong>increase productivity</strong> by providing information more quickly, easily, and intuitively [<a href="#references">3</a>, <a href="#references">4</a>, <a href="#references">5</a>].
+        <br><br>
+        Yet alongside these benefits, <strong>LLMs carry significant risks</strong>. Their outputs are prone to <strong>factual errors, inconsistencies, and hallucinations</strong> [<a href="#references">6</a>, <a href="#references">7</a>]. These <strong>issues often go unnoticed</strong> due to the models’ plausible-sounding responses, which can mislead users [<a href="#references">8</a>]. Furthermore, users may find it difficult to assess the reliability of AI-generated responses, as many current <strong>systems lack effective support for fact-checking</strong>, and citations—when present—are often missing, unclear, or entirely fabricated [<a href="#references">9</a>, <a href="#references">10</a>].
+      </p>      
+    </section>    
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">SOLUTION</h2>
+      <h3 class="section-subtitle">Design for critical engagement</h3>
+      <div class="section-image-container">
+        <img class="section-image" src="./ai_search_assets/solution.png" alt="A critically engaged user" style="width: 33%">
+      </div>
+      <p class="section-text">
+        To address these challenges, I designed an <strong>experimental LLM-powered search interface</strong> while exploring user interface and prompt strategies to support fact-checking in high-stakes environments. The goal was not only to retrieve documents efficiently, but to encourage users to critically engage with AI-generated responses through a combination of user interface features and structured output design.
+        <br><br>
+        I created a high-fidelity prototype in <strong>Figma</strong> and <strong>engineered a custom prompt</strong> for the LLM designed to support verification. The interface was designed to provide <strong>easy access</strong> to source documents while maintaining <strong>transparency</strong> by communicating system limitations.
+        <br><br>
+        The final version tested with users was implemented with the help of collaborating developers.
+      </p>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">RESEARCH</h2>
+      <h3 class="section-subtitle">A mixed-methods study with real users</h3>
+      <div class="section-image-container">
+        <img class="section-image" src="./ai_search_assets/research.png" alt="Illustration of research activities" style="width: 45%">
+      </div>
+      <p class="section-text">
+        To understand how interface and contextual design influence fact-checking behavior, usability, and user experience, I conducted a <strong>mixed-methods study</strong> with 16 participants.
+        <br><br>
+        The study was composed of four research components:
+        <ul>
+          <li>1. <strong>Exploratory observation</strong> to identify early usability issues and observe initial user interactions with the prototype.</li>
+          <li>2. <strong>Scenario-based observation</strong> to evaluate how users approached a realistic fact-checking task, focusing on how user interface elements influenced usability, user experience, and fact-checking behavior.</li>
+          <li>3. <strong>A post-task survey</strong> to collect quantitative data on usability, user experience, and the perceived helpfulness of user interface elements in supporting fact-checking.</li>
+          <li>4. <strong>Semi-structured interviews</strong> to gather deeper insights into users’ motivations to fact-check, perceived usefulness of specific features, situational factors, and overall emotional responses.</li>
+        </ul>        
+        <br>
+        I analyzed the data using a combination of the <strong>Critical Incident Technique</strong>, <strong>thematic analysis</strong> of interview transcripts, and <strong>statistical analysis</strong> of survey responses to identify patterns in user behavior, usability pain points, and design insights related to fact-checking.
+      </p>
+    </section>
+    
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">FINDINGS</h2>
+      <h3 class="section-subtitle">What made people trust the AI—yet still fact-check it anyway</h3>
+      <p class="section-text">
+        The system performed well overall in usability and user experience evaluations, demonstrating that <strong>designs that promote critical engagement</strong> can still offer a high-quality, usable experience.
+        <br><br>
+        Key insights included:
+        <ul>
+          <li><strong>Trust and verification aren’t mutually exclusive.</strong> Even when participants perceived the AI’s answers as trustworthy, many still engaged in fact-checking, especially when stakes felt high or when ambiguity was present.</li>
+          <li><strong>Clear, static cues prompted engagement.</strong> Clear, static components subtly encouraged verification with minimal cognitive effort, while more complex ones led to more mixed reactions.</li>
+          <li><strong>Information structure shaped cognitive load.</strong> Participants appreciated structured outputs, but overly long or inconsistently formatted responses caused confusion or disengagement.</li>
+          <li><strong>Perceived authority sometimes backfired.</strong> In some cases, explanation features appeared so authoritative and felt so convincing that they discouraged critical engagement, illustrating the risk of automation complacency.</li>
+        </ul>        
+      </p>
+    </section>
+
+    <section class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">REFLECTION</h2>
+      <h3 class="section-subtitle">Listening to data, people, and constraints</h3>
+      <p class="section-text">
+        One of the most challenging yet valuable parts of engaging in this project was making sense of different types of data. Observation sessions, surveys, and interviews each revealed something slightly different about how people interacted with the tool, and sometimes these data didn’t seem to align. I learned not to chase a single “truth,” but to <strong>look for bigger patterns</strong> that helped me understand the full picture.
+        <br><br>
+        I also came to <strong>appreciate the practical side of working with real people</strong> in real workplaces. Scheduling and running sessions required a lot of flexibility—people had competing responsibilities, last-minute changes, and limited time. It reminded me how important it is to design research that respects these limitations.
+        <br><br>
+        Collaborating with the development team also pushed me to <strong>think more carefully about what’s technically feasible</strong>. Some features had to be simplified or left out entirely due to time or technical constraints. That forced me to focus on priorities, like understanding what really supports users, what’s essential for transparency, and what can be adjusted without compromising the experience.
+        <br><br>
+        Overall, this project deepened my understanding of what it takes to create <strong>responsible, user-centered AI tools</strong>.
+      </p>
+    </section>
+
+    <section id="references" class="case-study-section">
+      <div class="section-line"></div>
+      <h2 class="section-title">REFERENCES</h2>
+      <ol>
+        <li><span>[1]</span> Longyue Wang, Chenyang Lyu, Tianbo Ji, Zhirui Zhang, Dian Yu, Shuming Shi, and Zhaopeng Tu. 2023. <em>Document-Level Machine Translation with Large Language Models.</em> arXiv:2304.02210 [cs]. (Oct. 2023).</li>
+        <li><span>[2]</span> Yang Zhang, Hanlei Jin, Dan Meng, Jun Wang, and Jinghua Tan. 2024. <em>A Comprehensive Survey on Process-Oriented Automatic Text Summarization with Exploration of LLM-Based Methods.</em> Version Number: 2. (2024).</li>
+        <li><span>[3]</span> Petter Bae Brandtzaeg and Asbjørn Følstad. 2017. <em>Why People Use Chatbots.</em> In <em>Internet Science. INSCI 2017 (Lecture Notes in Computer Science).</em> Ioannis Kompatsiaris et al., editors. Vol. 10673. Springer, Cham, (Nov. 2017), 377–392.</li>
+        <li><span>[4]</span> Andreas Lommatzsch and Jonas Katins. 2019. <em>An Information Retrieval-based Approach for Building Intuitive Chatbots for Large Knowledge Bases.</em> In <em>Proceedings of the LWDA conference 2019.</em> Berlin, Germany. CEUR Workshop Proceedings, 343–352. https://ceur-ws.org/Vol-2454/paper_60.pdf
+        <li><span>[5]</span> Ranci Ren, John W. Castro, Silvia T. Acuña, and Juan De Lara. 2019. <em>Usability of Chatbots: A Systematic Mapping Study.</em> (July 2019), 479–484.</li>
+        <li><span>[6]</span> Gabrijela Perković, Antun Drobnjak, and Ivica Botički. 2024. <em>Hallucinations in LLMs: Understanding and Addressing Challenges.</em> In <em>2024 47th MIPRO ICT and Electronics Convention (MIPRO).</em> IEEE, Opatija, Croatia, (May 2024), 2084–2088.</li>
+        <li><span>[7]</span> Anna Strasser. 2023. <em>On pitfalls (and advantages) of sophisticated large language models.</em> arXiv:2303.17511 [cs]. (Feb. 2023).</li>
+        <li><span>[8]</span> Catherine L. Clelland, Stuart Moss, and James D. Clelland. 2024. <em>Warning: Artificial intelligence chatbots can generate inaccurate medical and scientific information and references.</em> <em>Exploration of Digital Health Technologies</em>, 2(1), (Jan. 2024), 1–6.</li>
+        <li><span>[9]</span> Nelson F. Liu, Tianyi Zhang, and Percy Liang. 2023. <em>Evaluating Verifiability in Generative Search Engines.</em> arXiv:2304.09848 [cs]. (Oct. 2023). Retrieved June 4, 2024 from http://arxiv.org/abs/2304.09848
+        <li><span>[10]</span> Pranav Narayanan Venkit, Philippe Laban, Yilun Zhou, Yixin Mao, and Chien-Sheng Wu. 2024. <em>Search Engines in an AI Era: The False Promise of Factual and Verifiable Source-Cited Responses.</em> Version Number: 1. (2024).</li>
+      </ol>      
+    </section>
+
+      <section id="more-projects" class="case-study-section">
+        <div class="section-line"></div>
+        <h2 class="section-title">MORE PROJECTS</h2>
+        <div class="more-projects-image-container transition">
+          <div class="more-projects-image-wrapper">
+            <a href="./1_2_3_or_menstruation_education.html"><img class="more-projects-section-image project-blue" src="./assets/project_2.png" alt="1, 2, 3 or Menstruation Education"></a>
+            <a href="./1_2_3_or_menstruation_education.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">1, 2, 3 or Menstruation Education</h3></a>
+          </div>
+          <div class="more-projects-image-wrapper">
+            <a href="./mistoe.html"><img class="more-projects-section-image project-pink" src="./assets/project_3.png" alt="MisToe"></a>
+            <a href="./mistoe.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">MisToe</h3></a>
+          </div>
+          <div class="more-projects-image-wrapper">
+            <a href="./shared_achievements.html"><img class="more-projects-section-image project-periwinkle" src="./assets/project_4.png" alt="Shared Achievements"></a>
+            <a href="./shared_achievements.html" style="text-decoration: none; color: inherit;"><h3 class="more-projects-image-title">Shared Achievements</h3></a>
+          </div>
+        </div>
+      </section>
+      <div class="case-study-section">
+        <div class="section-line"></div>
+      </div>
+      <section id="contact-section">
+        <div class="contact-box transition">
+          <img class="letter-image" src="./assets/letter.png" alt="Letter">
+          <div class="contact-text">
+            <h2>Email:</h2>
+            <h2 class="pink">camelliaredko@gmail.com</h2>
+          </div>
+        </div>
+      </section>
+  </main>
+  <footer>
+    <span class="blue" style="padding-top: 10px;">&copy; Camellia Redko.</span>
+    <nav>
+      <div class="icon-container">
+        <a href="https://github.com/camelliaredko">
+          <i class="fab fa-github" style="margin-right: 16px; font-size: 24px; color: #8fb6ff;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/camelliaredko/">
+          <i class="fab fa-linkedin" style="font-size: 24px; color: #8fb6ff;"></i>
+        </a>
+      </div>
+    </nav>
+  </footer>
+  <script src='./assets/hamburger.js'></script>
+  <script src='./assets/ease_in_contents.js'></script>
+</body>
+</html>
