@@ -15,47 +15,47 @@ font-family: 'Fraunces', serif; */
 }
 
 .blue {
-  color: #8fb6ff;
+  color: #2C2622;
 }
 .periwinkle {
-  color: #635aee;
+  color: #2C2622;
 }
 .purple {
-  color: #ea9bee;
+  color: #2C2622;
 }
 .pink {
-  color: #ff90c2;
+  color: #2C2622;
 }
 .hotpink {
-  color: #ff71b0;
+  color: #823806;
 }
 .lightpink {
   color: #ffdde4;
 }
 .tan {
-  color: #feecd6;
+  color: #FAEFDD;
 }
 .darkgray {
-  color: #22201f;
+  color: #292420;
 }
 .blue-tag {
-  color: #aecaff;
+  color: #2C2622;
 }
 .pink-tag {
-  color: #ffbbd9;
+  color: #2C2622;
 }
 .purple-tag {
-  color: #ecb6ef;
+  color: #2C2622;
 }
 
 html {
   color: #240b00;
-  background-color: #feecd6;
+  background-color: #FAEFDD;
 }
 
 a {
   text-decoration: none;
-  color: #635aee;
+  color: #FAEFDD;
 }
 
 body {
@@ -84,7 +84,7 @@ h5 {
 
 #nameplate {
   margin-left: 0.5em;
-  color: #8fb6ff;
+  color: #2C2622;
   text-decoration: none;
   font-weight: 100;
   font-size: 2rem;
@@ -99,10 +99,10 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #8fb6ff;
+  /* border: 1px solid #8fb6ff; */
   margin: 0em;
   position: fixed;
-  background-color: #ffdde4;
+  background-color: #2C2622;
   top: 0;
   z-index: 1;
   height: 4rem;
@@ -117,6 +117,23 @@ h5 {
 
 #navbar a {
   padding: 1rem;
+  color: #FAEFDD;
+  text-decoration: none;
+  transition: color .18s ease, text-decoration-color .18s ease;
+  text-underline-offset: 0.18em;
+}
+
+#navbar a:hover,
+#navbar a:focus-visible {
+  color: #F0D09A;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-decoration-color: #F0D09A;
+  outline: none;
+}
+
+#navbar a.active {
+  color: #F0D09A;
 }
 
 #navbar li {
@@ -138,10 +155,6 @@ strong {
   font-weight: bold;
 }
 
-.link {
-  color: #ff71b0 !important;
-}
-
 .non-decorated-link {
   text-decoration: none;
   color: inherit;
@@ -160,19 +173,19 @@ main {
 }
 
 .project-blue {
-  border: 3px dashed #8fb6ff;
+  border: 1.5px solid #2C2622;
 }
 
 .project-pink {
-  border: 3px dashed #ff90c2;
+  border: 1.5px solid #2C2622;
 }
 
 .project-purple {
-  border: 3px dashed #ea9bee;
+  border: 1.5px solid #2C2622;
 }
 
 .project-periwinkle {
-  border: 3px dashed #635aee;
+  border: 1.5px solid #2C2622;
 }
 
 #contact-section {
@@ -189,7 +202,7 @@ main {
   width: 80%;
   max-width: 500px;
   height: auto;
-  border: 3px dashed #ff90c2;
+  border: 1.5px solid #2C2622;
   margin: auto;
   object-fit: cover;
   padding: 2em 2em;
@@ -209,6 +222,16 @@ main {
   font-weight: bold;
   font-size: 110%;
   line-height: 1.5rem;
+}
+
+.email-link {
+  color: #823806;          
+  text-decoration: none;   
+  font-weight: bold;    
+}
+
+.email-link:hover {
+  text-decoration: underline; 
 }
 
 .icon-container {
@@ -232,11 +255,11 @@ main {
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
   border-radius: 100px;
-  background-color: #ffbbd9;
-  color: #22201f;
+  background-color: #2C2622;
+  color: #FAEFDD;
   font-size: 16px;
   margin: 0.5rem;
-  color: rgba(34, 32, 31, 0.75);
+  color: #FAEFDD;
 }
 
 .skills-boxes-blue span {
@@ -244,11 +267,11 @@ main {
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
   border-radius: 100px;
-  background-color: #aecaff;
-  color: #22201f;
+  background-color: #2C2622;
+  color: #FAEFDD;
   font-size: 16px;
   margin: 0.5rem;
-  color: rgba(34, 32, 31, 0.75);
+  color: #FAEFDD;
 }
 
 .skills-boxes-purple span {
@@ -256,11 +279,11 @@ main {
   border: 1px solid rgba(34, 32, 31, 0.5);
   padding: 0px 10px;
   border-radius: 100px;
-  background-color: #ecb6ef;
-  color: #22201f;
+  background-color: #2C2622;
+  color: #FAEFDD;
   font-size: 16px;
   margin: 0.5rem;
-  color: rgba(34, 32, 31, 0.75);
+  color: #FAEFDD;
 }
 
 .icon-container {
@@ -278,7 +301,7 @@ main {
 }
 
 .image-label a {
-  color: #8fb6ff;
+  color: #2C2622;
   text-decoration: underline;
 }
 
@@ -287,9 +310,9 @@ footer {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  border-top: 1px solid #8fb6ff;
+  border-top: 1px solid #2C2622;
   width: 95%;
-  text-decoration-color: #8fb6ff;
+  text-decoration-color: #2C2622;
   margin-top: 3em;
 }
 
@@ -308,8 +331,8 @@ MOBILE STYLES
   #navbar ul {
     height: 100vh;
     padding: 2em 1em 1em 1em;
-    background-color: #ffdde4;
-    border: 1px solid #8fb6ff;
+    background-color: #2C2622;
+    border: 1px solid #2C2622;
     transform: translateX(100vw);
     transition: transform 0.3s ease-in;
     position: absolute;
@@ -333,7 +356,7 @@ MOBILE STYLES
 
   #navbar ul li a {
     line-height: 1.5;
-    color: #635aee;
+    color: #FAEFDD;
   }
 
   button {
@@ -353,7 +376,7 @@ MOBILE STYLES
   .line-burger {
     width: 36px;
     padding: 4px;
-    border-top: 2px solid #635aee;
+    border-top: 2px solid #FAEFDD;
   }
 
   #navbar.menu-opened #hamburger .line-burger:nth-child(1) {
@@ -390,7 +413,7 @@ MOBILE STYLES
   
   .contact-text {
     margin: 0;
-    width: 100%; /* Add this line */
+    width: 100%; 
   }
   
   .letter-image {
@@ -411,4 +434,42 @@ DESKTOP STYLES
   button {
     display: none;
   }
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: rgba(240,208,154,.45); 
+  color: #1f1a17;
+}
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+[id] { scroll-margin-top: 6rem; }
+
+main p a {
+  color: #823806;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.08em;
+}
+main p a:visited {
+  color: #823806;
+}
+
+.project-title a {
+  color: #823806;
+  text-decoration: none;
+}
+.project-title a:hover,
+.project-title a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.08em;
 }

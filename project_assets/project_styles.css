@@ -5,7 +5,7 @@
 }
 
 .section-line {
-  border-top: 1px solid #ff71b0;
+  border-top: 1px solid #2C2622;
   width: 100%;
   margin-top: 4em;
   margin-bottom: 4em;
@@ -54,7 +54,7 @@
 }
 
 iframe {
-  border: 3px dashed #ff90c2;
+  border: 1.5px solid #2C2622;
 }
 
 .section-image {
@@ -129,9 +129,9 @@ iframe {
   display: inline-block;
   padding: 12px;
   text-align: center;
-  border: 3px dashed #ff90c2;
-  background-color: #ffdde4;
-  color: #22201f;
+  border: 1.5px solid #2C2622;
+  background-color: #2C2622;
+  color: #FAEFDD;
   max-width: 80vw;
   line-height: 1.3em;
 }
@@ -143,7 +143,7 @@ iframe {
   content: "";
   width: 100%;
   height: 1px;
-  border-bottom: 3px dashed #ff90c2;
+  border-bottom: 1.5px solid #2C2622;
   z-index: -1;
 }
 
@@ -162,7 +162,7 @@ iframe {
   margin-bottom: 1em;
   max-width: 95%;
   border-radius: 10px;
-  border: 3px dashed #8fb6ff;
+  border: 1.5px solid #2C2622;
   max-height: 90vh;
 }
 
@@ -186,9 +186,9 @@ iframe {
   display: inline-block;
   padding: 12px;
   text-align: left;
-  border: 3px dashed #aecaff;
-  background-color: #caddff;
-  color: #22201f;
+  border: 1.5px solid #2C2622;
+  background-color: #F0D09A;
+  color: #2C2622;
   position: relative;
   overflow-wrap: break-word;
   min-width: 15vw;
@@ -327,9 +327,9 @@ MOBILE STYLES
     display: inline-block;
     padding: 12px;
     text-align: center;
-    border: 3px dashed #ff90c2;
-    background-color: #ffdde4;
-    color: #22201f;
+    border: 1.5px solid #2C2622;
+    background-color: #2C2622;
+    color: #FAEFDD;
     width: 80%;
     transform: translateX(-50%);
   }
