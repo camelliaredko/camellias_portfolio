@@ -319,7 +319,7 @@ MOBILE STYLES
 
   .about-image {
     border-radius: 50%;
-    border: 1.5px solid #2C2622;
+    /* border: 1.5px solid #2C2622; */
     object-fit: cover;
     shape-outside: circle();
     margin-top: 2em;
